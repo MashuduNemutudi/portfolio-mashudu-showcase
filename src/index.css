@@ -18,21 +18,21 @@
     --popover: 0 0% 100%;
     --popover-foreground: 215 25% 27%;
 
-    /* Primary brand - Professional blue */
-    --primary: 214 95% 93%;
-    --primary-foreground: 214 84% 56%;
-    --primary-dark: 214 84% 56%;
-    --primary-glow: 214 100% 85%;
+    /* Primary brand - Girly purple */
+    --primary: 315 85% 85%;
+    --primary-foreground: 315 90% 25%;
+    --primary-dark: 315 90% 45%;
+    --primary-glow: 315 100% 90%;
 
-    /* Secondary - Complementary purple */
-    --secondary: 260 60% 65%;
-    --secondary-foreground: 0 0% 100%;
-    --secondary-light: 260 40% 85%;
+    /* Secondary - Soft pink */
+    --secondary: 340 90% 80%;
+    --secondary-foreground: 340 90% 20%;
+    --secondary-light: 340 70% 90%;
 
-    /* Accent - Vibrant tech blue */
-    --accent: 199 89% 48%;
-    --accent-foreground: 0 0% 100%;
-    --accent-light: 199 89% 85%;
+    /* Accent - Sky blue */
+    --accent: 195 100% 70%;
+    --accent-foreground: 195 100% 15%;
+    --accent-light: 195 80% 85%;
 
     /* Muted colors */
     --muted: 220 14% 96%;
@@ -80,18 +80,18 @@
     --popover: 215 28% 11%;
     --popover-foreground: 213 31% 91%;
 
-    --primary: 214 100% 70%;
+    --primary: 315 85% 75%;
     --primary-foreground: 215 28% 9%;
-    --primary-dark: 214 84% 56%;
-    --primary-glow: 214 100% 85%;
+    --primary-dark: 315 90% 45%;
+    --primary-glow: 315 100% 85%;
 
-    --secondary: 260 60% 65%;
+    --secondary: 340 90% 70%;
     --secondary-foreground: 215 28% 9%;
-    --secondary-light: 260 40% 85%;
+    --secondary-light: 340 70% 85%;
 
-    --accent: 199 89% 48%;
+    --accent: 195 100% 65%;
     --accent-foreground: 215 28% 9%;
-    --accent-light: 199 89% 85%;
+    --accent-light: 195 80% 80%;
 
     --muted: 215 27% 17%;
     --muted-foreground: 215 10% 60%;
