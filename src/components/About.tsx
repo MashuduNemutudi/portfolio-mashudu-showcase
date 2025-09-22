@@ -6,7 +6,7 @@ const About = () => {
     {
       icon: GraduationCap,
       title: "Education",
-      description: "National Diploma in Computer Science from Tshwane University of Technology (TUT). All coursework completed June 2025, currently seeking WIL to graduate."
+      description: "National Diploma in Computer Science from Tshwane University of Technology (TUT). All coursework completed June 2025, currently doing WIL at ICEP TUT."
     },
     {
       icon: Award,
@@ -16,7 +16,7 @@ const About = () => {
     {
       icon: Users,
       title: "Leadership",
-      description: "Active leader in student organizations and mentoring programs. Guided young learners through programming concepts during Kidathon."
+      description: "Active leader in student organizations and mentoring programs. Mentor at Kiddathon and Telkom 10 Hackathon Emalahleni, guiding young learners through programming concepts."
     },
     {
       icon: BookOpen,
@@ -95,8 +95,8 @@ const About = () => {
           <div className="mt-16 text-center animate-fade-in animate-delay-400">
             <Card className="p-8 bg-gradient-card border-0 shadow-soft">
               <p className="text-lg text-muted-foreground italic">
-                "I'm currently seeking Work Integrated Learning opportunities where I can apply my 
-                skills, learn from industry professionals, and contribute to meaningful projects 
+                "I'm currently completing my Work Integrated Learning at ICEP TUT, where I'm applying my 
+                skills, learning from industry professionals, and contributing to meaningful projects 
                 that make a positive impact."
               </p>
             </Card>

@@ -43,6 +43,8 @@
     --destructive-foreground: 0 0% 100%;
     --success: 142 76% 36%;
     --success-foreground: 0 0% 100%;
+    --warning: 315 85% 75%;
+    --warning-foreground: 315 90% 25%;
 
     /* Border and input */
     --border: 220 13% 91%;

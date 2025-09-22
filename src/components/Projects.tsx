@@ -74,12 +74,15 @@ const Projects = () => {
   ];
 
   const hackathons = [
+    "G20 Tourism Hackathon - Participated",
     "Geekulcha Annual Hackathon",
     "Vulavula API Hackathon", 
     "Ayoba Business Chat Hackathon",
     "TelkomLearn Hackathon",
     "Maish 2nd Annual Hackathon",
-    "SMU Digital Health Hackathon"
+    "SMU Digital Health Hackathon",
+    "Kiddathon - Mentor",
+    "Telkom 10 Hackathon Emalahleni - Mentor"
   ];
 
   return (
