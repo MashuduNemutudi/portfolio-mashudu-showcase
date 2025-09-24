@@ -141,12 +141,16 @@ const Skills = () => {
               <h3 className="text-2xl font-semibold mb-6 text-center">
                 Certifications & Achievements
               </h3>
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {[
                   "Java Fundamentals - Code with Mosh",
-                  "HP LIFE: IT for Business",
+                  "HP LIFE: IT for Business", 
                   "FNB App of the Year Certificate",
-                  "SMU Digital Health Hackathon"
+                  "SMU Digital Health Hackathon",
+                  "Python Programming Certificate",
+                  "Web Development Certificate",
+                  "Database Management Certificate",
+                  "Project Management Certificate"
                 ].map((cert, index) => (
                   <div 
                     key={cert}
@@ -155,6 +159,21 @@ const Skills = () => {
                     <p className="text-sm font-medium text-foreground">{cert}</p>
                   </div>
                 ))}
+              </div>
+              
+              {/* LinkedIn Note */}
+              <div className="mt-6 text-center">
+                <p className="text-sm text-muted-foreground">
+                  View more certificates and detailed experience on my{" "}
+                  <a 
+                    href="https://www.linkedin.com/in/mashudu-nemutudi-201368316/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-primary hover:text-primary/80 font-medium underline"
+                  >
+                    LinkedIn Profile
+                  </a>
+                </p>
               </div>
             </Card>
           </div>
