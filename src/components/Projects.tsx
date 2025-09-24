@@ -86,7 +86,7 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-24 bg-muted/30">
+    <section id="projects" className="py-24 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
