@@ -79,8 +79,9 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-24 bg-background">
-      <div className="container mx-auto px-6">
+    <section id="skills" className="py-24 relative overflow-hidden">
+      <div className="absolute inset-0 animated-gradient opacity-10"></div>
+      <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16 animate-fade-in">
