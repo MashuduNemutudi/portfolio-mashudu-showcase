@@ -55,7 +55,7 @@ const Skills = () => {
     {
       icon: Brain,
       title: "Emerging Technologies",
-      color: "bg-pink-500",
+      color: "bg-teal-500",
       skills: [
         { name: "Artificial Intelligence", level: 70 },
         { name: "Data Science", level: 65 },
@@ -145,13 +145,18 @@ const Skills = () => {
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {[
                   "Java Fundamentals - Code with Mosh",
-                  "HP LIFE: IT for Business", 
-                  "FNB App of the Year Certificate",
-                  "SMU Digital Health Hackathon",
-                  "Python Programming Certificate",
-                  "Web Development Certificate",
-                  "Database Management Certificate",
-                  "Project Management Certificate"
+                  "HP LIFE: IT for Business",
+                  "HP LIFE: Business Email",
+                  "HP LIFE: Effective Presentation",
+                  "HP LIFE: Cybersecurity Awareness",
+                  "HP LIFE: Selling Online",
+                  "FNB App of the Year: Full Stack Development",
+                  "freeCodeCamp: Responsive Web Design",
+                  "freeCodeCamp: Back End Development and APIs",
+                  "freeCodeCamp: Relational Database",
+                  "freeCodeCamp: JavaScript Algorithms",
+                  "HackerRank: SQL (Basic)",
+                  "HackerRank: SQL (Intermediate)"
                 ].map((cert, index) => (
                   <div 
                     key={cert}

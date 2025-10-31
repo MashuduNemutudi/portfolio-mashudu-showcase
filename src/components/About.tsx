@@ -6,22 +6,22 @@ const About = () => {
     {
       icon: GraduationCap,
       title: "Education",
-      description: "National Diploma in Computer Science from Tshwane University of Technology (TUT). All coursework completed June 2025, currently doing WIL at ICEP TUT."
+      description: "Diploma in Computer Science from Tshwane University of Technology, Emalahleni. All coursework completed June 2025, currently completing Work Integrated Learning (WIL pending for graduation)."
     },
     {
       icon: Award,
       title: "Achievements",
-      description: "Class Representative (2024), Chairperson of Geekulcha Student Society (2025), Deputy Head Girl at high school, multiple hackathon participations."
+      description: "Chairperson of Geekulcha Student Society (2025-Present), Class Representative (2024), Deputy Head Girl at Lwamondo High School (2021), FNB App of the Year: Full Stack Development certification."
     },
     {
       icon: Users,
       title: "Leadership",
-      description: "Active leader in student organizations and mentoring programs. Mentor at Kiddathon and Telkom 10 Hackathon Emalahleni, guiding young learners through programming concepts."
+      description: "Active leader and mentor. Guided young learners at Kidathon and Kiddathon through foundational programming concepts, encouraging problem-solving, teamwork, and digital creativity."
     },
     {
       icon: BookOpen,
       title: "Continuous Learning",
-      description: "Passionate about staying current with technology trends, completed multiple certifications including Java Fundamentals and HP LIFE courses."
+      description: "Passionate about staying current with technology trends. Completed Java Fundamentals (Code with Mosh), HP LIFE courses (IT for Business, Business Email, Cybersecurity), freeCodeCamp certifications, and HackerRank SQL."
     }
   ];
 
@@ -36,8 +36,8 @@ const About = () => {
               About <span className="gradient-text">Me</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              A passionate Computer Science student with hands-on experience in full-stack development 
-              and a drive to solve real-world problems through technology.
+              Computer Science student with hands-on experience in full-stack development, eager to contribute
+              to business intelligence and custom software projects in a dynamic, collaborative environment.
             </p>
           </div>
 
@@ -46,21 +46,22 @@ const About = () => {
             <Card className="p-8 md:p-12 shadow-soft hover-glow">
               <div className="space-y-6 text-lg leading-relaxed">
                 <p>
-                  I'm a final-year Computer Science student at Tshwane University of Technology, 
-                  passionate about creating innovative software solutions. My journey in technology 
-                  has been driven by curiosity and a desire to build applications that make a difference.
+                  I'm a Computer Science student at Tshwane University of Technology who completed all
+                  coursework in June 2025. Currently seeking Work Integrated Learning or internship opportunities
+                  required for certification to officially obtain my National Diploma. My major fields of study
+                  include Software Programming, Mobile Device Programming, Database Design, and System Analysis.
                 </p>
                 <p>
-                  Throughout my studies, I've gained hands-on experience with <strong>Java EE</strong>, 
-                  <strong> ReactJS</strong>, <strong>Python</strong>, and <strong>SQL databases</strong>. 
-                  I've worked on diverse projects ranging from health record management systems to 
-                  chatbots with natural language processing capabilities.
+                  I have hands-on experience with full-stack web application development using <strong>Java</strong>,
+                  <strong> JavaScript</strong>, <strong> ReactJS</strong>, <strong> React Native</strong>,
+                  <strong> Python</strong>, and <strong>SQL</strong>. I've built secure applications with REST APIs,
+                  implemented MVC architecture, and worked extensively with PostgreSQL, Oracle SQL, and MySQL databases.
                 </p>
                 <p>
-                  Beyond technical skills, I'm a natural leader who believes in the power of 
-                  collaboration and continuous learning. As Chairperson of the Geekulcha Student Society 
-                  and former Class Representative, I've developed strong communication and teamwork skills 
-                  that complement my technical expertise.
+                  I'm passionate about IT, teamwork, adaptability, and continuous learning. Self-motivated with strong
+                  communication skills and driven to solve problems in dynamic, collaborative environments. As Chairperson
+                  of the Geekulcha Student Society (2025-Present) and former Class Representative (2024), I've developed
+                  leadership abilities that complement my technical expertise.
                 </p>
               </div>
             </Card>
@@ -96,9 +97,9 @@ const About = () => {
           <div className="mt-16 text-center animate-fade-in animate-delay-400">
             <Card className="p-8 bg-gradient-card border-0 shadow-soft">
               <p className="text-lg text-muted-foreground italic">
-                "I'm currently completing my Work Integrated Learning at ICEP TUT, where I'm applying my 
-                skills, learning from industry professionals, and contributing to meaningful projects 
-                that make a positive impact."
+                "Strong problem-solver with a collaborative mindset, eager to apply full-stack development skills
+                in real-world business intelligence and custom software projects. Currently seeking Work Integrated
+                Learning opportunities to complete my National Diploma certification."
               </p>
             </Card>
           </div>

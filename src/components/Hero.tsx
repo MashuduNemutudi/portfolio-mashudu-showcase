@@ -35,19 +35,19 @@ const Hero = () => {
                   <span className="text-white">Nemutudi</span>
                 </h1>
                 <p className="text-lg md:text-xl text-white/90 font-medium">
-                  Final Year Computer Science Student | Full-Stack Developer
+                  Computer Science Student | Full-Stack Developer | Seeking WIL Opportunities
                 </p>
               </div>
 
               {/* Description */}
               <p className="text-base md:text-lg text-white/80 leading-relaxed animate-fade-in animate-delay-200">
-                Passionate about creating innovative solutions with Java EE, React, Python, and modern web technologies. 
-                Currently seeking Work Integrated Learning opportunities to complete my National Diploma.
+                Self-motivated full-stack developer with hands-on experience in Java, JavaScript, ReactJS, React Native, Python, and SQL.
+                Strong problem-solver with a collaborative mindset, eager to contribute to business intelligence and custom software projects.
               </p>
 
               {/* Tech stack badges */}
               <div className="flex flex-wrap justify-center md:justify-start gap-3 animate-fade-in animate-delay-300">
-                {["Java EE", "ReactJS", "Python", "PostgreSQL", "JavaScript", "REST APIs"].map((tech, index) => (
+                {["Java EE", "ReactJS", "React Native", "Python", "SQL", "Node.js"].map((tech, index) => (
                   <span 
                     key={tech}
                     className={`px-4 py-2 rounded-full glass text-white/90 text-sm font-medium hover-glow animate-delay-${(index + 1) * 100}`}

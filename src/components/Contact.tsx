@@ -56,7 +56,7 @@ const Contact = () => {
     {
       icon: MapPin,
       label: "Location",
-      value: "Kempton Park, South Africa",
+      value: "Sunninghill, Sandton, 2191",
       link: null
     }
   ];
