@@ -17,6 +17,11 @@ const Mentorship = () => {
       icon: Handshake,
       title: "Support Team – FNB App of the Year Hackathon",
       description: "Assisted participants with setup, technical challenges, and workflow organization. Contributed to smooth event coordination during the national competition."
+    },
+    {
+      icon: Award,
+      title: "Scrum Master – MAISH 3rd Annual Hackathon",
+      description: "Served as Scrum Master and DevOps lead during the MAISH Hackathon, managing team sprints, facilitating daily stand-ups, and overseeing deployment processes. Ensured smooth collaboration and timely delivery of project milestones."
     }
   ];
 

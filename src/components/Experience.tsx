@@ -8,6 +8,7 @@ const Experience = () => {
       company: "Informatics Community Engagement Programme (ICEP)",
       period: "July 2025 – December 2025",
       type: "Work Integrated Learning",
+      summary: "Throughout my WIL, I actively engaged in both individual and collaborative development activities, strengthening my technical, analytical, and project management skills. I contributed to proposal writing, system design, prototyping, full-stack development, and mobile app integration while working in an agile environment with continuous feedback and review sessions.",
       tasks: [
         "Built frontend pages and reusable UI components for web and mobile applications",
         "Integrated APIs and connected the frontend to backend endpoints",
@@ -16,8 +17,24 @@ const Experience = () => {
         "Managed state, validation, and form handling across applications",
         "Debugged integration and UI errors to ensure smooth user experiences",
         "Ensured smooth data flow between frontend and backend systems",
-        "Worked in Agile environment with daily stand-ups, planning, and review sessions",
-        "Contributed to mobile and web modules in multi-team development"
+        "Worked in Agile environment with daily stand-ups, planning, review sessions",
+        "Contributed to mobile and web modules in multi-team development",
+        "Completed freeCodeCamp certificates: Responsive Web Design, JavaScript Algorithms & Data Structures, Frontend Development Libraries, Relational Database, Backend Development & APIs",
+        "Attended AI Student Workshop, Career Expo, and Robotics Event",
+        "Completed Scrum Master Training",
+        "Documented effective presentation strategies for future use",
+        "Participated in initial planning and design phases for multiple projects",
+        "Developed an Emoji App and an Instagram Clone using React Native",
+        "Built a Salon Appointment Scheduler and World Cup Database using React.js",
+        "Contributed to proposal writing, diagram modeling, prototyping, and system planning",
+        "Contributed to TUT Event Project and Library Project (proposal writing, low-fidelity & high-fidelity prototypes, sequence diagrams, use-case diagrams)",
+        "Actively participated in team collaboration sessions and stakeholder review meetings",
+        "Developed the UbuntuExplorer WebApp at the G20 Hackathon",
+        "Developed mobile app pages for the Library Project (Leave Request, Schedule & Timetable, Admin Dashboard, Notification)",
+        "Fixed critical bugs in authentication and leave-request features",
+        "Integrated multiple features into the mobile app (Leave-Request, Notification, Schedule, Admin Dashboard)",
+        "Debugged and tested integrated mobile pages for functionality and stability",
+        "Presented progress, prototypes, and final app demos during Show & Tell sessions and stakeholder meetings"
       ]
     }
   ];
@@ -68,14 +85,23 @@ const Experience = () => {
                   </div>
                 </div>
 
+                {/* Summary */}
+                {exp.summary && (
+                  <div className="mb-6 p-4 bg-primary/5 rounded-lg border border-primary/10">
+                    <p className="text-muted-foreground italic leading-relaxed">
+                      {exp.summary}
+                    </p>
+                  </div>
+                )}
+
                 {/* Tasks */}
                 <div className="space-y-3">
-                  <h4 className="text-lg font-semibold text-foreground mb-4">Key Responsibilities:</h4>
+                  <h4 className="text-lg font-semibold text-foreground mb-4">Key Responsibilities & Achievements:</h4>
                   <ul className="grid md:grid-cols-2 gap-3">
                     {exp.tasks.map((task, taskIndex) => (
                       <li key={taskIndex} className="flex items-start space-x-3">
                         <CheckCircle size={18} className="text-primary mt-0.5 flex-shrink-0" />
-                        <span className="text-muted-foreground">{task}</span>
+                        <span className="text-muted-foreground text-sm">{task}</span>
                       </li>
                     ))}
                   </ul>
