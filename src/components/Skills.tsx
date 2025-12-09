@@ -38,7 +38,8 @@ const Skills = () => {
         { name: "Mobile UI Components", level: 80 },
         { name: "Mobile API Integration", level: 85 },
         { name: "SecureStore/Auth Tokens", level: 75 },
-      ]
+      ],
+      note: "Hands-on experience using Expo for building and integrating mobile apps with backend APIs."
     },
     {
       icon: Link,
@@ -46,10 +47,11 @@ const Skills = () => {
       color: "bg-indigo-500",
       skills: [
         { name: "Frontend-Backend Integration", level: 85 },
-        { name: "Consuming REST APIs", level: 85 },
-        { name: "Fetch & Axios", level: 85 },
+        { name: "API Integration (Web & Mobile)", level: 85 },
+        { name: "React/Expo to Backend", level: 85 },
         { name: "JSON Handling", level: 90 },
-        { name: "CRUD Operations", level: 85 },
+        { name: "CRUD Operations via APIs", level: 85 },
+        { name: "Debugging API Issues", level: 80 },
       ]
     },
     {
@@ -90,15 +92,17 @@ const Skills = () => {
     },
     {
       icon: Users,
-      title: "Soft Skills",
+      title: "Soft Skills & Leadership",
       color: "bg-cyan-500",
       skills: [
         { name: "Team Leadership", level: 90 },
+        { name: "Scrum Master Experience", level: 85 },
         { name: "Problem Solving", level: 90 },
         { name: "Communication", level: 85 },
         { name: "Project Management", level: 80 },
         { name: "Mentoring", level: 85 },
-      ]
+      ],
+      note: "Scrum Master experience during MAISH Hackathon and Mash Hackathon. Completed Scrum Master Training."
     }
   ];
 
@@ -156,6 +160,13 @@ const Skills = () => {
                     </div>
                   ))}
                 </div>
+
+                {/* Note if exists */}
+                {category.note && (
+                  <p className="mt-4 text-xs text-muted-foreground italic border-t border-border pt-3">
+                    {category.note}
+                  </p>
+                )}
               </Card>
             ))}
           </div>
