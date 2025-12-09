@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
-import { Code, Database, Globe, Wrench, Brain, Users } from "lucide-react";
+import { Code, Database, Globe, Wrench, Brain, Users, Smartphone, Link } from "lucide-react";
 
 const Skills = () => {
   const skillCategories = [
@@ -25,7 +25,31 @@ const Skills = () => {
         { name: "Responsive Design", level: 90 },
         { name: "JavaScript ES6+", level: 85 },
         { name: "State Management", level: 80 },
-        { name: "API Integration", level: 85 },
+        { name: "UI Components", level: 85 },
+      ]
+    },
+    {
+      icon: Smartphone,
+      title: "Mobile App Development",
+      color: "bg-pink-500",
+      skills: [
+        { name: "React Native", level: 80 },
+        { name: "Expo", level: 80 },
+        { name: "Mobile UI Components", level: 80 },
+        { name: "Mobile API Integration", level: 85 },
+        { name: "SecureStore/Auth Tokens", level: 75 },
+      ]
+    },
+    {
+      icon: Link,
+      title: "API & System Integration",
+      color: "bg-indigo-500",
+      skills: [
+        { name: "Frontend-Backend Integration", level: 85 },
+        { name: "Consuming REST APIs", level: 85 },
+        { name: "Fetch & Axios", level: 85 },
+        { name: "JSON Handling", level: 90 },
+        { name: "CRUD Operations", level: 85 },
       ]
     },
     {
@@ -37,7 +61,7 @@ const Skills = () => {
         { name: "Node.js", level: 75 },
         { name: "PostgreSQL", level: 85 },
         { name: "Oracle SQL", level: 80 },
-        { name: "REST APIs", level: 85 },
+        { name: "Authentication & Token Mgmt", level: 80 },
       ]
     },
     {
@@ -46,22 +70,22 @@ const Skills = () => {
       color: "bg-orange-500",
       skills: [
         { name: "Git/Version Control", level: 85 },
-        { name: "FastAPI", level: 75 },
+        { name: "React", level: 85 },
+        { name: "Express.js", level: 75 },
+        { name: "Prisma", level: 70 },
         { name: "MVC Architecture", level: 85 },
-        { name: "GlassFish", level: 75 },
-        { name: "UML Design", level: 80 },
       ]
     },
     {
       icon: Brain,
-      title: "Emerging Technologies",
+      title: "Concepts & Practices",
       color: "bg-teal-500",
       skills: [
-        { name: "Artificial Intelligence", level: 70 },
-        { name: "Data Science", level: 65 },
-        { name: "Natural Language Processing", level: 70 },
-        { name: "Mobile Development", level: 60 },
+        { name: "API Communication", level: 85 },
+        { name: "Frontend-Backend Data Flow", level: 85 },
+        { name: "Integration Testing", level: 75 },
         { name: "System Analysis", level: 80 },
+        { name: "Agile Methodology", level: 80 },
       ]
     },
     {
@@ -89,12 +113,12 @@ const Skills = () => {
               Technical <span className="gradient-text">Skills</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              A comprehensive toolkit built through hands-on projects, coursework, and continuous learning
+              A comprehensive toolkit built through hands-on projects, WIL internship, and continuous learning
             </p>
           </div>
 
           {/* Skills Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {skillCategories.map((category, categoryIndex) => (
               <Card 
                 key={category.title} 
@@ -105,7 +129,7 @@ const Skills = () => {
                   <div className={`w-10 h-10 rounded-lg ${category.color} flex items-center justify-center`}>
                     <category.icon size={20} className="text-white" />
                   </div>
-                  <h3 className="text-lg font-semibold text-foreground">
+                  <h3 className="text-sm font-semibold text-foreground">
                     {category.title}
                   </h3>
                 </div>
@@ -115,7 +139,7 @@ const Skills = () => {
                   {category.skills.map((skill, skillIndex) => (
                     <div key={skill.name} className="space-y-2">
                       <div className="flex justify-between items-center">
-                        <span className="text-sm font-medium text-foreground">
+                        <span className="text-xs font-medium text-foreground">
                           {skill.name}
                         </span>
                         <span className="text-xs text-muted-foreground">
