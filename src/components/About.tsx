@@ -6,7 +6,7 @@ const About = () => {
     {
       icon: GraduationCap,
       title: "Education",
-      description: "Diploma in Computer Science from Tshwane University of Technology, Emalahleni. All coursework completed June 2025, currently completing Work Integrated Learning (WIL pending for graduation)."
+      description: "Diploma in Computer Science from Tshwane University of Technology, Emalahleni. All coursework completed June 2025, currently completing Work Integrated Learning (WIL) at ICEP, graduating in 2026."
     },
     {
       icon: Award,
@@ -16,7 +16,7 @@ const About = () => {
     {
       icon: Users,
       title: "Leadership",
-      description: "Active leader and mentor. Guided young learners at Kidathon and Kiddathon through foundational programming concepts, encouraging problem-solving, teamwork, and digital creativity."
+      description: "Active leader and mentor. Guided young learners at Kidathon through foundational programming concepts. Mentored youth at Telkom 10x Hackathon, fostering innovation and technical skills."
     },
     {
       icon: BookOpen,
@@ -36,8 +36,8 @@ const About = () => {
               About <span className="gradient-text">Me</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              Computer Science student with hands-on experience in full-stack development, eager to contribute
-              to business intelligence and custom software projects in a dynamic, collaborative environment.
+              Detail-oriented and motivated Computer Science graduate with hands-on experience in full-stack and mobile development, 
+              eager to contribute to business intelligence and custom software projects.
             </p>
           </div>
 
@@ -46,16 +46,21 @@ const About = () => {
             <Card className="p-8 md:p-12 shadow-soft hover-glow">
               <div className="space-y-6 text-lg leading-relaxed">
                 <p>
-                  I'm a Computer Science student at Tshwane University of Technology who completed all
-                  coursework in June 2025. Currently seeking Work Integrated Learning or internship opportunities
-                  required for certification to officially obtain my National Diploma. My major fields of study
-                  include Software Programming, Mobile Device Programming, Database Design, and System Analysis.
+                  I'm a Computer Science graduate from Tshwane University of Technology who completed all
+                  coursework in June 2025. Currently completing my Work Integrated Learning as a Frontend Developer Intern 
+                  at the Informatics Community Engagement Programme (ICEP), with graduation expected in 2026. 
+                  My major fields of study include Software Programming, Mobile Device Programming, Database Design, and System Analysis.
                 </p>
                 <p>
-                  I have hands-on experience with full-stack web application development using <strong>Java</strong>,
-                  <strong> JavaScript</strong>, <strong> ReactJS</strong>, <strong> React Native</strong>,
+                  I have hands-on experience with full-stack web and mobile application development using <strong>Java</strong>,
+                  <strong> JavaScript</strong>, <strong> ReactJS</strong>, <strong> React Native</strong>, <strong> Expo</strong>,
                   <strong> Python</strong>, and <strong>SQL</strong>. I've built secure applications with REST APIs,
                   implemented MVC architecture, and worked extensively with PostgreSQL, Oracle SQL, and MySQL databases.
+                </p>
+                <p>
+                  My experience includes hands-on mobile app development using Expo + React Native, strong API & system 
+                  integration skills connecting frontend to backend, and experience building UI components, integrating APIs, 
+                  and testing features in Agile environments.
                 </p>
                 <p>
                   I'm passionate about IT, teamwork, adaptability, and continuous learning. Self-motivated with strong
@@ -93,13 +98,14 @@ const About = () => {
             ))}
           </div>
 
-          {/* Personal Touch */}
+          {/* Professional Summary */}
           <div className="mt-16 text-center animate-fade-in animate-delay-400">
             <Card className="p-8 bg-gradient-card border-0 shadow-soft">
               <p className="text-lg text-muted-foreground italic">
-                "Strong problem-solver with a collaborative mindset, eager to apply full-stack development skills
-                in real-world business intelligence and custom software projects. Currently seeking Work Integrated
-                Learning opportunities to complete my National Diploma certification."
+                "Detail-oriented and motivated Computer Science graduate with hands-on experience in full-stack and mobile development. 
+                Skilled in Java, JavaScript, ReactJS, React Native, Python, SQL, and integrating frontend applications with backend systems. 
+                Experienced in building responsive interfaces, consuming APIs, and contributing to Agile software teams. 
+                Currently completing WIL as a Frontend Developer Intern at ICEP, graduating in 2026."
               </p>
             </Card>
           </div>

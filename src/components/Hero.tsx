@@ -10,7 +10,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Background with overlay */}
       <div className="absolute inset-0 z-0">
         <img 
@@ -22,7 +22,7 @@ const Hero = () => {
       </div>
       
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-6">
+      <div className="relative z-10 container mx-auto px-6 py-12">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Text Content */}
@@ -35,19 +35,23 @@ const Hero = () => {
                   <span className="text-white">Nemutudi</span>
                 </h1>
                 <p className="text-lg md:text-xl text-white/90 font-medium">
-                  Computer Science Student | Full-Stack Developer | Seeking WIL Opportunities
+                  Computer Science Graduate | Full-Stack Developer | Frontend Developer Intern at ICEP
+                </p>
+                <p className="text-sm md:text-base text-white/70">
+                  WIL completing December 2025 • Graduating 2026
                 </p>
               </div>
 
               {/* Description */}
               <p className="text-base md:text-lg text-white/80 leading-relaxed animate-fade-in animate-delay-200">
-                Self-motivated full-stack developer with hands-on experience in Java, JavaScript, ReactJS, React Native, Python, and SQL.
-                Strong problem-solver with a collaborative mindset, eager to contribute to business intelligence and custom software projects.
+                Detail-oriented and motivated Computer Science graduate with hands-on experience in full-stack and mobile development. 
+                Skilled in Java, JavaScript, ReactJS, React Native, Python, SQL, and integrating frontend applications with backend systems. 
+                Experienced in building responsive interfaces, consuming APIs, and contributing to Agile software teams.
               </p>
 
               {/* Tech stack badges */}
               <div className="flex flex-wrap justify-center md:justify-start gap-3 animate-fade-in animate-delay-300">
-                {["Java EE", "ReactJS", "React Native", "Python", "SQL", "Node.js"].map((tech, index) => (
+                {["Java EE", "ReactJS", "React Native", "Expo", "Python", "SQL", "Node.js"].map((tech, index) => (
                   <span 
                     key={tech}
                     className={`px-4 py-2 rounded-full glass text-white/90 text-sm font-medium hover-glow animate-delay-${(index + 1) * 100}`}

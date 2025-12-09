@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ExternalLink, Github, Code, Database, Globe, Bot, Activity, FileText } from "lucide-react";
+import { ExternalLink, Github, Code, Database, Globe, Bot, Activity, Smartphone } from "lucide-react";
 
 const Projects = () => {
   const projects = [
@@ -15,7 +15,8 @@ const Projects = () => {
         "Secure user authentication system",
         "Responsive design for all devices", 
         "RESTful API architecture",
-        "Team collaboration project"
+        "Implemented frontend–backend integration for authentication and data handling",
+        "Connected forms and dashboards to backend endpoints"
       ]
     },
     {
@@ -28,20 +29,21 @@ const Projects = () => {
         "Complete CRUD functionality",
         "MVC architectural pattern",
         "Professional documentation",
-        "GlassFish deployment"
+        "GlassFish deployment",
+        "Integrated CRUD operations with backend database logic"
       ]
     },
     {
       title: "KhulumaNathi Chatbot",
       description: "Intelligent chatbot developed in Python with Vula-Vula API integration. Focused on local-language interactions and natural language processing capabilities for enhanced user communication.",
       icon: Bot,
-      technologies: ["Python", "NLP", "Vula-Vula API", "Team Project"],
+      technologies: ["Python", "Vula-Vula API", "Team Project"],
       type: "AI/ML Application",
       highlights: [
-        "Natural language processing",
         "Local language support",
         "API integration",
-        "Collaborative development"
+        "Collaborative development",
+        "Enhanced user communication"
       ]
     },
     {
@@ -53,8 +55,21 @@ const Projects = () => {
       highlights: [
         "Reusable component library",
         "State management patterns",
-        "API integration",
-        "Modern React practices"
+        "Components connected to APIs with real-time data rendering",
+        "Loading states & error handling for API requests"
+      ]
+    },
+    {
+      title: "Mobile Integration Projects",
+      description: "Developed mobile screens connected to backend APIs using Expo + React Native. Features secure token handling with SecureStore, navigation, and seamless frontend-backend data flow.",
+      icon: Smartphone,
+      technologies: ["React Native", "Expo", "SecureStore", "REST APIs", "Navigation"],
+      type: "Mobile Development",
+      highlights: [
+        "Mobile screens connected to backend APIs",
+        "Expo + React Native for UI and navigation",
+        "Secure token handling with SecureStore",
+        "Real-time data synchronization"
       ]
     },
     {
@@ -82,7 +97,7 @@ const Projects = () => {
     "Maish 2nd Annual Hackathon",
     "SMU Digital Health Hackathon",
     "Kiddathon - Mentor",
-    "Telkom 10 Hackathon Emalahleni - Mentor"
+    "Telkom 10x Hackathon Emalahleni - Mentor"
   ];
 
   return (
@@ -96,8 +111,8 @@ const Projects = () => {
               Featured <span className="gradient-text">Projects</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              A showcase of applications and systems I've built, demonstrating full-stack development 
-              capabilities and problem-solving skills
+              A showcase of applications and systems I've built, demonstrating full-stack and mobile development 
+              capabilities with strong API integration skills
             </p>
           </div>
 
