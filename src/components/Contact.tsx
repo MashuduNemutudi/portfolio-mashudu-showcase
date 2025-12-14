@@ -87,7 +87,7 @@ const Contact = () => {
               Get In <span className="gradient-text">Touch</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              I'm currently seeking Work Integrated Learning opportunities. 
+              I'm currently seeking internship or job opportunities. 
               Let's discuss how we can work together!
             </p>
           </div>
@@ -102,9 +102,9 @@ const Contact = () => {
                   <h3 className="text-2xl font-semibold">Let's Connect</h3>
                 </div>
                 <p className="text-muted-foreground leading-relaxed">
-                  I'm excited to explore Work Integrated Learning opportunities where I can 
+                  I'm excited to explore internship or job opportunities where I can 
                   apply my full-stack development skills and contribute to meaningful projects. 
-                  Whether you're looking for a motivated intern or want to discuss potential 
+                  Whether you're looking for a motivated developer or want to discuss potential 
                   collaborations, I'd love to hear from you.
                 </p>
               </Card>

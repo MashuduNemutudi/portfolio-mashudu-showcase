@@ -38,7 +38,7 @@ const Hero = () => {
                   Computer Science Graduate | Full-Stack Developer | Frontend Developer Intern at ICEP
                 </p>
                 <p className="text-sm md:text-base text-white/70">
-                  WIL completing December 2025 • Graduating 2026
+                  Completing WIL December 2025 • Graduating 2026 • Seeking Internship/Job Opportunities
                 </p>
               </div>
 
