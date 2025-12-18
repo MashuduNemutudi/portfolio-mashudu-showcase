@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail, Download } from "lucide-react";
 import heroImage from "@/assets/hero-workspace.jpg";
 import profileImage from "@/assets/mashudu-profile.jpg";
 
@@ -78,6 +78,18 @@ const Hero = () => {
                 >
                   Get In Touch
                 </Button>
+                <a 
+                  href="/Mashudu_Nemutudi_CV.pdf" 
+                  download="Mashudu_Nemutudi_CV.pdf"
+                >
+                  <Button 
+                    size="lg" 
+                    className="bg-white/20 hover:bg-white/30 text-white border border-white/30 backdrop-blur-sm transition-all duration-medium hover:scale-105 flex items-center gap-2"
+                  >
+                    <Download size={18} />
+                    Download CV
+                  </Button>
+                </a>
               </div>
 
               {/* Social links */}
