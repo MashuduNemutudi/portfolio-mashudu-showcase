@@ -57,7 +57,7 @@ const Footer = () => {
                 >
                   +27 69 401 6726
                 </a>
-                <p>Polokwane, Limpopo</p>
+                <p>Polokwane, Limpopo | Soweto, Gauteng</p>
               </div>
             </div>
           </div>
