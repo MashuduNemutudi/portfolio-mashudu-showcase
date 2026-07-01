@@ -20,22 +20,49 @@ const Projects = () => {
       ]
     },
     {
-      title: "AgriVision Dashboard",
-      description: "User management dashboard with comprehensive CRUD operations using Java EE and MVC architecture. Deployed on GlassFish server with complete system documentation and UML diagrams.",
+      title: "AgriVision – User Management Dashboard",
+      description: "Java EE web application with full CRUD functionality. Designed and implemented database structures and system workflows, troubleshot system errors, and deployed & tested using GlassFish server.",
       icon: Database,
       technologies: ["Java EE", "MVC", "GlassFish", "UML", "CRUD"],
       type: "Enterprise Application",
       highlights: [
-        "Complete CRUD functionality",
-        "MVC architectural pattern",
-        "Professional documentation",
-        "GlassFish deployment",
-        "Integrated CRUD operations with backend database logic"
+        "Full CRUD functionality",
+        "Designed database structures and system workflows",
+        "Troubleshot system errors and resolved bugs",
+        "Deployed and tested using GlassFish server",
+        "MVC architectural pattern"
+      ]
+    },
+    {
+      title: "Ubuntu Explorer – Web-Based File Explorer",
+      description: "Interactive system simulating Linux file navigation. Developed at the G20 Tourism Hackathon, focused on system usability, user interaction, and resolving UI/functionality issues.",
+      icon: Globe,
+      technologies: ["JavaScript", "HTML", "CSS", "React"],
+      type: "Web Application",
+      highlights: [
+        "Interactive Linux file navigation simulation",
+        "Identified and resolved UI and system functionality issues",
+        "Enhanced system usability and user interaction",
+        "Developed during G20 Tourism Hackathon"
+      ]
+    },
+    {
+      title: "e-Library-Log – Attendance & Leave Management System",
+      description: "Comprehensive attendance and leave management system with role-based access control. Analysed system requirements, designed workflows, and supported testing, validation, and system improvements.",
+      icon: Database,
+      technologies: ["React Native", "Expo", "REST APIs", "PostgreSQL", "SecureStore"],
+      type: "Full-Stack Mobile App",
+      highlights: [
+        "Analysed system requirements and designed workflows",
+        "Implemented role-based access control features",
+        "Built mobile pages (Leave Request, Schedule, Admin Dashboard, Notification)",
+        "Supported testing, validation, and system improvements",
+        "Secure token handling with SecureStore"
       ]
     },
     {
       title: "KhulumaNathi Chatbot",
-      description: "Intelligent chatbot developed in Python with Vula-Vula API integration. Focused on local-language interactions and natural language processing capabilities for enhanced user communication.",
+      description: "Intelligent chatbot developed in Python with Vula-Vula API integration. Focused on local-language interactions for enhanced user communication.",
       icon: Bot,
       technologies: ["Python", "Vula-Vula API", "Team Project"],
       type: "AI/ML Application",
@@ -44,32 +71,6 @@ const Projects = () => {
         "API integration",
         "Collaborative development",
         "Enhanced user communication"
-      ]
-    },
-    {
-      title: "React Frontend Components",
-      description: "Collection of reusable React components with state management, API connectivity, and modern UI/UX patterns. Demonstrates proficiency in component-based architecture and modern React practices.",
-      icon: Globe,
-      technologies: ["ReactJS", "State Management", "APIs", "Components"],
-      type: "Frontend Development",
-      highlights: [
-        "Reusable component library",
-        "State management patterns",
-        "Components connected to APIs with real-time data rendering",
-        "Loading states & error handling for API requests"
-      ]
-    },
-    {
-      title: "Mobile Integration Projects",
-      description: "Developed mobile screens connected to backend APIs using Expo + React Native. Features secure token handling with SecureStore, navigation, and seamless frontend-backend data flow.",
-      icon: Smartphone,
-      technologies: ["React Native", "Expo", "SecureStore", "REST APIs", "Navigation"],
-      type: "Mobile Development",
-      highlights: [
-        "Mobile screens connected to backend APIs",
-        "Expo + React Native for UI and navigation",
-        "Secure token handling with SecureStore",
-        "Real-time data synchronization"
       ]
     },
     {
@@ -94,10 +95,11 @@ const Projects = () => {
     "Vulavula API Hackathon", 
     "Ayoba Business Chat Hackathon",
     "TelkomLearn Hackathon",
-    "Maish 2nd Annual Hackathon",
+    "MAISH 3rd Annual Hackathon - Scrum Master",
     "SMU Digital Health Hackathon",
-    "Kiddathon - Mentor",
-    "Telkom 10x Hackathon Emalahleni - Mentor"
+    "Kidathon - Mentor",
+    "Telkom 10x Hackathon Emalahleni - Mentor",
+    "FNB App of the Year - Support Team"
   ];
 
   return (

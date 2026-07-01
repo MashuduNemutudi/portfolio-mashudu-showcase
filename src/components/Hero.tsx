@@ -35,18 +35,18 @@ const Hero = () => {
                   <span className="text-white">Nemutudi</span>
                 </h1>
                 <p className="text-lg md:text-xl text-white/90 font-medium">
-                  Computer Science Graduate | Full-Stack Developer | Frontend Developer Intern at ICEP
+                  Computer Science Graduate | Full-Stack Developer | Software Developer
                 </p>
                 <p className="text-sm md:text-base text-white/70">
-                  Completing WIL December 2025 • Graduating 2026 • Seeking Internship/Job Opportunities
+                  Graduated • WIL Completed at ICEP • Seeking Internship/Job Opportunities
                 </p>
               </div>
 
               {/* Description */}
               <p className="text-base md:text-lg text-white/80 leading-relaxed animate-fade-in animate-delay-200">
-                Detail-oriented and motivated Computer Science graduate with hands-on experience in full-stack and mobile development. 
-                Skilled in Java, JavaScript, ReactJS, React Native, Python, SQL, and integrating frontend applications with backend systems. 
-                Experienced in building responsive interfaces, consuming APIs, and contributing to Agile software teams.
+                Motivated and detail-oriented Computer Science graduate with practical experience in software development, 
+                application support, and system troubleshooting. Skilled in Java, JavaScript, Python, SQL, and web development 
+                technologies, with hands-on exposure to application development, debugging, and system testing.
               </p>
 
               {/* Tech stack badges */}
