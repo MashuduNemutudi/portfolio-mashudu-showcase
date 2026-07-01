@@ -56,7 +56,7 @@ const Contact = () => {
     {
       icon: MapPin,
       label: "Location",
-      value: "Sunninghill, Sandton, 2191",
+      value: "Polokwane, Limpopo",
       link: null
     }
   ];

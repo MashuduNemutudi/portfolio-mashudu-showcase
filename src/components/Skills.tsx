@@ -117,7 +117,7 @@ const Skills = () => {
               Technical <span className="gradient-text">Skills</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              A comprehensive toolkit built through hands-on projects, WIL internship, and continuous learning
+              A comprehensive toolkit built through hands-on projects, completed WIL internship, and continuous learning
             </p>
           </div>
 
@@ -179,17 +179,19 @@ const Skills = () => {
               </h3>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {[
+                  "Certificate in Cyber Security - University of Johannesburg (In Progress)",
                   "Java Fundamentals - Code with Mosh",
                   "HP LIFE: IT for Business",
-                  "HP LIFE: Business Email",
-                  "HP LIFE: Effective Presentation",
+                  "HP LIFE: Business Communication",
                   "HP LIFE: Cybersecurity Awareness",
+                  "HP LIFE: Effective Presentation",
                   "HP LIFE: Selling Online",
                   "FNB App of the Year: Full Stack Development",
                   "freeCodeCamp: Responsive Web Design",
                   "freeCodeCamp: Back End Development and APIs",
                   "freeCodeCamp: Relational Database",
-                  "freeCodeCamp: JavaScript Algorithms",
+                  "freeCodeCamp: JavaScript Algorithms & Data Structures",
+                  "freeCodeCamp: Frontend Development Libraries",
                   "HackerRank: SQL (Basic)",
                   "HackerRank: SQL (Intermediate)"
                 ].map((cert, index) => (

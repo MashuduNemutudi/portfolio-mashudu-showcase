@@ -6,12 +6,12 @@ const About = () => {
     {
       icon: GraduationCap,
       title: "Education",
-      description: "Diploma in Computer Science from Tshwane University of Technology, Emalahleni. All coursework completed June 2025, currently completing Work Integrated Learning (WIL) at ICEP, graduating in 2026."
+      description: "Diploma in Computer Science from Tshwane University of Technology. Graduated and successfully completed Work Integrated Learning (WIL) as a Frontend Developer Intern. Currently pursuing a Certificate in Cyber Security at the University of Johannesburg."
     },
     {
       icon: Award,
       title: "Achievements",
-      description: "Chairperson of Geekulcha Student Society (2025-Present), Class Representative (2024), Deputy Head Girl at Lwamondo High School (2021), FNB App of the Year: Full Stack Development certification."
+      description: "Chairperson of Geekulcha Student Society (2025), Scrum Master at MAISH Hackathon, successfully completed real-world development projects, and built and deployed a portfolio showcasing practical software development skills."
     },
     {
       icon: Users,
@@ -21,7 +21,7 @@ const About = () => {
     {
       icon: BookOpen,
       title: "Continuous Learning",
-      description: "Passionate about staying current with technology trends. Completed Java Fundamentals (Code with Mosh), HP LIFE courses (IT for Business, Business Email, Cybersecurity), freeCodeCamp certifications, and HackerRank SQL."
+      description: "Passionate about staying current with technology trends. Completed Java Fundamentals (Code with Mosh), HP LIFE courses (IT for Business, Business Communication, Cybersecurity Awareness), freeCodeCamp certifications, and pursuing Cyber Security certification."
     }
   ];
 
@@ -36,8 +36,8 @@ const About = () => {
               About <span className="gradient-text">Me</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              Detail-oriented and motivated Computer Science graduate with hands-on experience in full-stack and mobile development, 
-              eager to contribute to business intelligence and custom software projects.
+              Motivated and detail-oriented Computer Science graduate seeking to build a career in software development, 
+              with practical experience in application development, debugging, and system testing.
             </p>
           </div>
 
@@ -46,27 +46,27 @@ const About = () => {
             <Card className="p-8 md:p-12 shadow-soft hover-glow">
               <div className="space-y-6 text-lg leading-relaxed">
                 <p>
-                  I'm a Computer Science graduate from Tshwane University of Technology who completed all
-                  coursework in June 2025. Currently completing my Work Integrated Learning as a Frontend Developer Intern 
-                  at the Informatics Community Engagement Programme (ICEP), with graduation expected in 2026. 
-                  My major fields of study include Software Programming, Mobile Device Programming, Database Design, and System Analysis.
+                  I'm a Computer Science graduate from Tshwane University of Technology who has successfully 
+                  completed my Diploma along with Work Integrated Learning (WIL) as a Frontend Developer Intern 
+                  at the Informatics Community Engagement Programme (ICEP). My major fields of study include 
+                  Software Programming, Mobile Device Programming, Database Design, and System Analysis.
                 </p>
                 <p>
-                  I have hands-on experience with full-stack web and mobile application development using <strong>Java</strong>,
-                  <strong> JavaScript</strong>, <strong> ReactJS</strong>, <strong> React Native</strong>, <strong> Expo</strong>,
-                  <strong> Python</strong>, and <strong>SQL</strong>. I've built secure applications with REST APIs,
+                  I have a strong foundation in <strong>Java</strong>, <strong>JavaScript</strong>, <strong>Python</strong>,
+                  <strong> SQL</strong>, and web development technologies including <strong>ReactJS</strong>, <strong>React Native</strong>,
+                  <strong> Node.js</strong>, <strong>HTML</strong>, and <strong>CSS</strong>. I've built secure applications with REST APIs,
                   implemented MVC architecture, and worked extensively with PostgreSQL, Oracle SQL, and MySQL databases.
                 </p>
                 <p>
-                  My experience includes hands-on mobile app development using Expo + React Native, strong API & system 
-                  integration skills connecting frontend to backend, and experience building UI components, integrating APIs, 
-                  and testing features in Agile environments.
+                  My experience includes user requirement analysis, application development, system maintenance, and 
+                  database design principles gained through my internship and academic projects. I've demonstrated 
+                  the ability to troubleshoot technical issues, collaborate in agile teams, and deliver functional 
+                  software solutions.
                 </p>
                 <p>
-                  I'm passionate about IT, teamwork, adaptability, and continuous learning. Self-motivated with strong
-                  communication skills and driven to solve problems in dynamic, collaborative environments. As Chairperson
-                  of the Geekulcha Student Society (2025-Present) and former Class Representative (2024), I've developed
-                  leadership abilities that complement my technical expertise.
+                  I'm passionate about learning and developing in low-code/no-code environments, software engineering 
+                  principles, and modern development frameworks. As Chairperson of the Geekulcha Student Society (2025) 
+                  and Scrum Master at MAISH Hackathon, I've developed leadership abilities that complement my technical expertise.
                 </p>
               </div>
             </Card>
@@ -102,10 +102,10 @@ const About = () => {
           <div className="mt-16 text-center animate-fade-in animate-delay-400">
             <Card className="p-8 bg-gradient-card border-0 shadow-soft">
               <p className="text-lg text-muted-foreground italic">
-                "Detail-oriented and motivated Computer Science graduate with hands-on experience in full-stack and mobile development. 
-                Skilled in Java, JavaScript, ReactJS, React Native, Python, SQL, and integrating frontend applications with backend systems. 
-                Experienced in building responsive interfaces, consuming APIs, and contributing to Agile software teams. 
-                Currently completing WIL as a Frontend Developer Intern at ICEP, graduating in 2026."
+                "Motivated and detail-oriented Computer Science graduate with practical experience in software 
+                development, application support, and system troubleshooting, seeking to build a career in software 
+                development. Passionate about learning and developing in modern development frameworks, with strong 
+                problem-solving, communication, and teamwork skills."
               </p>
             </Card>
           </div>

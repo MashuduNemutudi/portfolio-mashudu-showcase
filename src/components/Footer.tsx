@@ -15,7 +15,7 @@ const Footer = () => {
                 Mashudu Nemutudi
               </div>
               <p className="text-sm text-muted-foreground">
-                Computer Science Student & Full-Stack Developer passionate about 
+                Computer Science Graduate & Full-Stack Developer passionate about 
                 creating innovative solutions with modern technology.
               </p>
             </div>
@@ -57,7 +57,7 @@ const Footer = () => {
                 >
                   +27 69 401 6726
                 </a>
-                <p>Kempton Park, South Africa</p>
+                <p>Polokwane, Limpopo</p>
               </div>
             </div>
           </div>
