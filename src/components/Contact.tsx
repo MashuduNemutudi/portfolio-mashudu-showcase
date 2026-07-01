@@ -56,7 +56,7 @@ const Contact = () => {
     {
       icon: MapPin,
       label: "Location",
-      value: "Polokwane, Limpopo",
+      value: "Polokwane, Limpopo | Soweto, Gauteng",
       link: null
     }
   ];
