@@ -1,172 +1,116 @@
 import { Card } from "@/components/ui/card";
-import { Progress } from "@/components/ui/progress";
-import { Code, Database, Globe, Wrench, Brain, Users, Smartphone, Link } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
+import { Code, Database, Layers, Wrench, Brain, Award } from "lucide-react";
 
 const Skills = () => {
   const skillCategories = [
     {
       icon: Code,
       title: "Programming Languages",
-      color: "bg-blue-500",
-      skills: [
-        { name: "Java", level: 90 },
-        { name: "JavaScript", level: 85 },
-        { name: "Python", level: 80 },
-        { name: "SQL/PL-SQL", level: 85 },
-        { name: "HTML/CSS", level: 90 },
-      ]
+      skills: ["Java", "JavaScript (ES6+)", "TypeScript", "Python", "SQL / PL-SQL", "HTML5", "CSS3"],
     },
     {
-      icon: Globe,
-      title: "Frontend Development",
-      color: "bg-green-500",
-      skills: [
-        { name: "ReactJS", level: 85 },
-        { name: "Responsive Design", level: 90 },
-        { name: "JavaScript ES6+", level: 85 },
-        { name: "State Management", level: 80 },
-        { name: "UI Components", level: 85 },
-      ]
-    },
-    {
-      icon: Smartphone,
-      title: "Mobile App Development",
-      color: "bg-pink-500",
-      skills: [
-        { name: "React Native", level: 80 },
-        { name: "Expo", level: 80 },
-        { name: "Mobile UI Components", level: 80 },
-        { name: "Mobile API Integration", level: 85 },
-        { name: "SecureStore/Auth Tokens", level: 75 },
-      ],
-      note: "Hands-on experience using Expo for building and integrating mobile apps with backend APIs."
-    },
-    {
-      icon: Link,
-      title: "API & System Integration",
-      color: "bg-indigo-500",
-      skills: [
-        { name: "Frontend-Backend Integration", level: 85 },
-        { name: "API Integration (Web & Mobile)", level: 85 },
-        { name: "React/Expo to Backend", level: 85 },
-        { name: "JSON Handling", level: 90 },
-        { name: "CRUD Operations via APIs", level: 85 },
-        { name: "Debugging API Issues", level: 80 },
-      ]
+      icon: Layers,
+      title: "Frameworks & Libraries",
+      skills: ["React.js", "React Native", "Expo", "Node.js", "Express.js", "Java EE (Servlets, JSP)", "Prisma", "Tailwind CSS"],
     },
     {
       icon: Database,
-      title: "Backend & Databases",
-      color: "bg-purple-500",
-      skills: [
-        { name: "Java EE (Servlets, JSP)", level: 85 },
-        { name: "Node.js", level: 75 },
-        { name: "PostgreSQL", level: 85 },
-        { name: "Oracle SQL", level: 80 },
-        { name: "Authentication & Token Mgmt", level: 80 },
-      ]
+      title: "Databases",
+      skills: ["PostgreSQL", "MySQL", "Oracle SQL", "Database Design", "Schema Modelling", "Query Optimisation"],
     },
     {
       icon: Wrench,
-      title: "Tools & Frameworks",
-      color: "bg-orange-500",
-      skills: [
-        { name: "Git/Version Control", level: 85 },
-        { name: "React", level: 85 },
-        { name: "Express.js", level: 75 },
-        { name: "Prisma", level: 70 },
-        { name: "MVC Architecture", level: 85 },
-      ]
+      title: "Tools & Platforms",
+      skills: ["Git & GitHub", "VS Code", "Postman", "GlassFish", "Netlify", "Expo SecureStore", "npm"],
     },
     {
       icon: Brain,
-      title: "Concepts & Practices",
-      color: "bg-teal-500",
+      title: "Other Technical Skills",
       skills: [
-        { name: "API Communication", level: 85 },
-        { name: "Frontend-Backend Data Flow", level: 85 },
-        { name: "Integration Testing", level: 75 },
-        { name: "System Analysis", level: 80 },
-        { name: "Agile Methodology", level: 80 },
-      ]
+        "REST API Development",
+        "Frontend–Backend Integration",
+        "MVC Architecture",
+        "Object-Oriented Programming",
+        "Authentication & Role-Based Access",
+        "System Analysis",
+        "Debugging & Troubleshooting",
+        "Software Testing & QA",
+        "Agile & Scrum",
+        "Low-Code / No-Code (Learning)",
+      ],
     },
     {
-      icon: Users,
-      title: "Soft Skills & Leadership",
-      color: "bg-cyan-500",
+      icon: Award,
+      title: "Professional & Leadership",
       skills: [
-        { name: "Team Leadership", level: 90 },
-        { name: "Scrum Master Experience", level: 85 },
-        { name: "Problem Solving", level: 90 },
-        { name: "Communication", level: 85 },
-        { name: "Project Management", level: 80 },
-        { name: "Mentoring", level: 85 },
+        "Scrum Master (MAISH Hackathon)",
+        "Team Leadership",
+        "Mentoring",
+        "Requirements Gathering",
+        "Stakeholder Communication",
+        "Problem Solving",
       ],
-      note: "Scrum Master experience during MAISH Hackathon and Mash Hackathon. Completed Scrum Master Training."
-    }
+    },
+  ];
+
+  const certifications = [
+    "Certificate in Cyber Security – University of Johannesburg",
+    "Java Fundamentals – Code with Mosh",
+    "freeCodeCamp: Responsive Web Design",
+    "freeCodeCamp: Back End Development & APIs",
+    "freeCodeCamp: Relational Database",
+    "freeCodeCamp: JavaScript Algorithms & Data Structures",
+    "freeCodeCamp: Frontend Development Libraries",
+    "HP LIFE: IT for Business",
+    "HP LIFE: Cybersecurity Awareness",
+    "HP LIFE: Business Communication",
+    "HP LIFE: Effective Presentation",
+    "HP LIFE: Selling Online",
+    "HackerRank: SQL (Basic)",
+    "HackerRank: SQL (Intermediate)",
+    "FNB App of the Year: Full Stack Development",
+    "Scrum Master Training",
   ];
 
   return (
     <section id="skills" className="py-24 relative overflow-hidden">
-      <div className="absolute inset-0 animated-gradient opacity-10"></div>
+      <div className="absolute inset-0 animated-gradient opacity-10" aria-hidden="true"></div>
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            <h2 className="text-3xl md:text-5xl font-bold mb-5 tracking-tight">
               Technical <span className="gradient-text">Skills</span>
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              A comprehensive toolkit built through hands-on projects, completed WIL internship, and continuous learning
+            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+              A toolkit built through production work, a completed internship and continuous self-directed learning.
             </p>
           </div>
 
           {/* Skills Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {skillCategories.map((category, categoryIndex) => (
-              <Card 
-                key={category.title} 
-                className={`p-6 shadow-soft hover-glow animate-fade-in animate-delay-${(categoryIndex + 1) * 100}`}
+              <Card
+                key={category.title}
+                className={`p-6 shadow-soft hover-glow transition-transform duration-medium hover:-translate-y-1 animate-fade-in animate-delay-${(categoryIndex + 1) * 100}`}
               >
-                {/* Category Header */}
-                <div className="flex items-center space-x-3 mb-6">
-                  <div className={`w-10 h-10 rounded-lg ${category.color} flex items-center justify-center`}>
-                    <category.icon size={20} className="text-white" />
+                <div className="flex items-center gap-3 mb-5">
+                  <div className="w-11 h-11 rounded-xl bg-gradient-primary flex items-center justify-center flex-shrink-0">
+                    <category.icon size={20} className="text-primary-foreground" aria-hidden="true" />
                   </div>
-                  <h3 className="text-sm font-semibold text-foreground">
-                    {category.title}
-                  </h3>
+                  <h3 className="text-base font-semibold text-foreground">{category.title}</h3>
                 </div>
 
-                {/* Skills List */}
-                <div className="space-y-4">
-                  {category.skills.map((skill, skillIndex) => (
-                    <div key={skill.name} className="space-y-2">
-                      <div className="flex justify-between items-center">
-                        <span className="text-xs font-medium text-foreground">
-                          {skill.name}
-                        </span>
-                        <span className="text-xs text-muted-foreground">
-                          {skill.level}%
-                        </span>
-                      </div>
-                      <Progress 
-                        value={skill.level} 
-                        className="h-2"
-                        style={{
-                          animationDelay: `${(categoryIndex * 6 + skillIndex) * 100}ms`
-                        }}
-                      />
-                    </div>
+                <ul className="flex flex-wrap gap-2">
+                  {category.skills.map((skill) => (
+                    <li key={skill}>
+                      <Badge variant="secondary" className="text-xs font-medium px-3 py-1">
+                        {skill}
+                      </Badge>
+                    </li>
                   ))}
-                </div>
-
-                {/* Note if exists */}
-                {category.note && (
-                  <p className="mt-4 text-xs text-muted-foreground italic border-t border-border pt-3">
-                    {category.note}
-                  </p>
-                )}
+                </ul>
               </Card>
             ))}
           </div>
@@ -174,48 +118,30 @@ const Skills = () => {
           {/* Certifications */}
           <div className="mt-16 animate-fade-in animate-delay-400">
             <Card className="p-8 bg-gradient-card shadow-soft">
-              <h3 className="text-2xl font-semibold mb-6 text-center">
-                Certifications & Achievements
-              </h3>
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-                {[
-                  "Certificate in Cyber Security - University of Johannesburg (In Progress)",
-                  "Java Fundamentals - Code with Mosh",
-                  "HP LIFE: IT for Business",
-                  "HP LIFE: Business Communication",
-                  "HP LIFE: Cybersecurity Awareness",
-                  "HP LIFE: Effective Presentation",
-                  "HP LIFE: Selling Online",
-                  "FNB App of the Year: Full Stack Development",
-                  "freeCodeCamp: Responsive Web Design",
-                  "freeCodeCamp: Back End Development and APIs",
-                  "freeCodeCamp: Relational Database",
-                  "freeCodeCamp: JavaScript Algorithms & Data Structures",
-                  "freeCodeCamp: Frontend Development Libraries",
-                  "HackerRank: SQL (Basic)",
-                  "HackerRank: SQL (Intermediate)"
-                ].map((cert, index) => (
-                  <div 
+              <h3 className="text-2xl font-semibold mb-6 text-center">Certifications &amp; Training</h3>
+              <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                {certifications.map((cert) => (
+                  <li
                     key={cert}
-                    className={`text-center p-4 rounded-lg bg-card border border-border hover-glow animate-fade-in animate-delay-${(index + 5) * 100}`}
+                    className="p-4 rounded-lg bg-card border border-border text-center transition-transform duration-medium hover:-translate-y-0.5 hover-glow"
                   >
                     <p className="text-sm font-medium text-foreground">{cert}</p>
-                  </div>
+                  </li>
                 ))}
-              </div>
-              
-              {/* LinkedIn Note */}
+              </ul>
+
               <div className="mt-6 text-center">
                 <p className="text-sm text-muted-foreground">
                   View more certificates and detailed experience on my{" "}
-                  <a 
-                    href="https://www.linkedin.com/in/mashudu-nemutudi-201368316/" 
-                    target="_blank" 
+                  <a
+                    href="https://www.linkedin.com/in/mashudu-nemutudi-201368316/"
+                    target="_blank"
                     rel="noopener noreferrer"
-                    className="text-primary hover:text-primary/80 font-medium underline"
+                    className="text-primary hover:text-primary/80 font-medium underline underline-offset-2"
                   >
-                    LinkedIn Profile
+                    LinkedIn profile
                   </a>
+                  .
                 </p>
               </div>
             </Card>

@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Github, Linkedin, Mail, Download } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail, Download, FolderGit2, MapPin } from "lucide-react";
 import heroImage from "@/assets/hero-workspace.jpg";
 import profileImage from "@/assets/mashudu-profile.jpg";
 
@@ -9,112 +9,124 @@ const Hero = () => {
     element?.scrollIntoView({ behavior: "smooth" });
   };
 
+  const techStack = ["React", "Node.js", "Express", "PostgreSQL", "Java EE", "React Native", "Python"];
+
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+    <section id="home" className="relative min-h-dvh flex items-center justify-center overflow-hidden pt-24 pb-16">
       {/* Background with overlay */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src={heroImage} 
-          alt="Professional workspace" 
+        <img
+          src={heroImage}
+          alt=""
+          aria-hidden="true"
+          fetchPriority="high"
+          decoding="async"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 animated-gradient opacity-90"></div>
       </div>
-      
+
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 py-12">
         <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Text Content */}
-            <div className="space-y-8 animate-fade-in text-center md:text-left">
-              {/* Main heading */}
+            <div className="space-y-7 animate-fade-in text-center md:text-left">
               <div className="space-y-4">
-                <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
+                <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass text-white/90 text-xs md:text-sm font-medium tracking-wide">
+                  <span className="w-2 h-2 rounded-full bg-success animate-pulse" aria-hidden="true"></span>
+                  Open to software developer roles
+                </span>
+                <h1 className="text-4xl md:text-6xl font-bold tracking-tight leading-[1.05]">
                   <span className="gradient-text">Mashudu</span>
                   <br />
-                  <span className="text-white">Nemutudi</span>
+                  <span className="text-primary-foreground">Nemutudi</span>
                 </h1>
-                <p className="text-lg md:text-xl text-white/90 font-medium">
-                  Computer Science Graduate | Full-Stack Developer | Software Developer
+                <p className="text-lg md:text-xl text-primary-foreground/90 font-medium">
+                  Software Developer | Full-Stack Developer
                 </p>
-                <p className="text-sm md:text-base text-white/70">
-                  Graduated • WIL Completed at ICEP • Seeking Internship/Job Opportunities
+                <p className="flex items-center justify-center md:justify-start gap-2 text-sm md:text-base text-primary-foreground/70">
+                  <MapPin size={16} aria-hidden="true" />
+                  Soweto, Gauteng, South Africa
                 </p>
               </div>
 
               {/* Description */}
-              <p className="text-base md:text-lg text-white/80 leading-relaxed animate-fade-in animate-delay-200">
-                Motivated and detail-oriented Computer Science graduate with practical experience in software development, 
-                application support, and system troubleshooting. Skilled in Java, JavaScript, Python, SQL, and web development 
-                technologies, with hands-on exposure to application development, debugging, and system testing.
+              <p className="text-base md:text-lg text-primary-foreground/85 leading-relaxed max-w-xl mx-auto md:mx-0 animate-fade-in animate-delay-200">
+                Computer Science graduate building production software end to end. I design, develop and maintain the
+                Mbevha Motors Management System — a React, Node.js and PostgreSQL platform that digitised a real
+                business — after completing my Work Integrated Learning as a Frontend Developer Intern.
               </p>
 
               {/* Tech stack badges */}
-              <div className="flex flex-wrap justify-center md:justify-start gap-3 animate-fade-in animate-delay-300">
-                {["Java EE", "ReactJS", "React Native", "Expo", "Python", "SQL", "Node.js"].map((tech, index) => (
-                  <span 
+              <ul className="flex flex-wrap justify-center md:justify-start gap-2.5 animate-fade-in animate-delay-300">
+                {techStack.map((tech) => (
+                  <li
                     key={tech}
-                    className={`px-4 py-2 rounded-full glass text-white/90 text-sm font-medium hover-glow animate-delay-${(index + 1) * 100}`}
+                    className="px-3.5 py-1.5 rounded-full glass text-primary-foreground/90 text-xs md:text-sm font-medium"
                   >
                     {tech}
-                  </span>
+                  </li>
                 ))}
-              </div>
+              </ul>
 
               {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start animate-fade-in animate-delay-400">
-                <Button 
-                  size="lg" 
-                  className="bg-white/20 hover:bg-white/30 text-white border border-white/30 backdrop-blur-sm transition-all duration-medium hover:scale-105 hover:shadow-glow"
+              <div className="flex flex-col sm:flex-row flex-wrap gap-3 justify-center md:justify-start animate-fade-in animate-delay-400">
+                <Button
+                  size="lg"
+                  className="min-h-11 bg-primary-foreground text-primary-dark hover:bg-primary-foreground/90 font-semibold transition-all duration-medium hover:scale-[1.03]"
                   onClick={() => scrollToSection("projects")}
                 >
-                  View My Work
+                  <FolderGit2 size={18} className="mr-2" aria-hidden="true" />
+                  View Projects
                 </Button>
-                <Button 
-                  size="lg" 
+                <Button
+                  size="lg"
+                  asChild
+                  className="min-h-11 bg-white/20 hover:bg-white/30 text-primary-foreground border border-white/30 backdrop-blur-sm transition-all duration-medium hover:scale-[1.03]"
+                >
+                  <a href="/Mashudu_Nemutudi_CV.pdf" download="Mashudu_Nemutudi_CV.pdf">
+                    <Download size={18} className="mr-2" aria-hidden="true" />
+                    Download CV
+                  </a>
+                </Button>
+                <Button
+                  size="lg"
                   variant="outline"
-                  className="bg-white/20 hover:bg-white/30 text-white border border-white/30 backdrop-blur-sm transition-all duration-medium hover:scale-105"
+                  className="min-h-11 bg-transparent hover:bg-white/20 text-primary-foreground border border-white/40 backdrop-blur-sm transition-all duration-medium hover:scale-[1.03]"
                   onClick={() => scrollToSection("contact")}
                 >
-                  Get In Touch
+                  <Mail size={18} className="mr-2" aria-hidden="true" />
+                  Contact Me
                 </Button>
-                <a 
-                  href="/Mashudu_Nemutudi_CV.pdf" 
-                  download="Mashudu_Nemutudi_CV.pdf"
-                >
-                  <Button 
-                    size="lg" 
-                    className="bg-white/20 hover:bg-white/30 text-white border border-white/30 backdrop-blur-sm transition-all duration-medium hover:scale-105 flex items-center gap-2"
-                  >
-                    <Download size={18} />
-                    Download CV
-                  </Button>
-                </a>
               </div>
 
               {/* Social links */}
-              <div className="flex justify-center md:justify-start gap-6 animate-fade-in animate-delay-400">
-                <a 
-                  href="https://github.com/MashuduNemutudi" 
-                  target="_blank" 
+              <div className="flex justify-center md:justify-start gap-5 animate-fade-in animate-delay-400">
+                <a
+                  href="https://github.com/MashuduNemutudi"
+                  target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white/70 hover:text-white transition-colors duration-medium hover:scale-110 transform"
+                  aria-label="GitHub profile"
+                  className="inline-flex items-center justify-center min-h-11 min-w-11 rounded-full text-primary-foreground/70 hover:text-primary-foreground transition-colors duration-medium"
                 >
-                  <Github size={24} />
+                  <Github size={24} aria-hidden="true" />
                 </a>
-                <a 
-                  href="https://www.linkedin.com/in/mashudu-nemutudi-201368316/" 
-                  target="_blank" 
+                <a
+                  href="https://www.linkedin.com/in/mashudu-nemutudi-201368316/"
+                  target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white/70 hover:text-white transition-colors duration-medium hover:scale-110 transform"
+                  aria-label="LinkedIn profile"
+                  className="inline-flex items-center justify-center min-h-11 min-w-11 rounded-full text-primary-foreground/70 hover:text-primary-foreground transition-colors duration-medium"
                 >
-                  <Linkedin size={24} />
+                  <Linkedin size={24} aria-hidden="true" />
                 </a>
-                <a 
+                <a
                   href="mailto:nemutudimashudu03@gmail.com"
-                  className="text-white/70 hover:text-white transition-colors duration-medium hover:scale-110 transform"
+                  aria-label="Send an email"
+                  className="inline-flex items-center justify-center min-h-11 min-w-11 rounded-full text-primary-foreground/70 hover:text-primary-foreground transition-colors duration-medium"
                 >
-                  <Mail size={24} />
+                  <Mail size={24} aria-hidden="true" />
                 </a>
               </div>
             </div>
@@ -122,10 +134,13 @@ const Hero = () => {
             {/* Profile Image */}
             <div className="flex justify-center animate-fade-in animate-delay-200">
               <div className="relative">
-                <div className="w-80 h-80 rounded-full overflow-hidden border-4 border-white/30 shadow-2xl hover-glow">
-                  <img 
-                    src={profileImage} 
-                    alt="Mashudu Nemutudi - Professional Profile"
+                <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white/30 shadow-2xl hover-glow">
+                  <img
+                    src={profileImage}
+                    alt="Portrait of Mashudu Nemutudi, software developer"
+                    width={320}
+                    height={320}
+                    decoding="async"
                     className="w-full h-full object-cover object-center"
                   />
                 </div>
@@ -136,12 +151,13 @@ const Hero = () => {
         </div>
 
         {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <button 
+        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 animate-bounce">
+          <button
             onClick={() => scrollToSection("about")}
-            className="text-white/60 hover:text-white transition-colors duration-medium"
+            aria-label="Scroll to About section"
+            className="inline-flex items-center justify-center min-h-11 min-w-11 rounded-full text-primary-foreground/60 hover:text-primary-foreground transition-colors duration-medium"
           >
-            <ArrowDown size={24} />
+            <ArrowDown size={24} aria-hidden="true" />
           </button>
         </div>
       </div>
