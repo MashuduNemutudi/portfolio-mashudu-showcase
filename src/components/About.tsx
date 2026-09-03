@@ -55,11 +55,16 @@ const About = () => {
                   and mobile features, integrated APIs and worked in agile delivery teams.
                 </p>
                 <p>
-                  I currently work as an <strong>Administrator at Mbevha Motors (Pty) Ltd</strong>, where I manage
-                  day-to-day business operations while contributing to the company's technology and software
-                  initiatives. There I designed and built the Mbevha Motors Management System — a React, Node.js,
-                  Express and PostgreSQL platform covering authentication, inventory, vehicle servicing, quotations and
-                  invoicing — which I continue to maintain and expand based on business needs.
+                  I am currently an <strong>IT Technical Support Intern at Nkgwete IT Solutions</strong>, providing
+                  first-line support to users at Eskom Megawatt Park. I troubleshoot hardware, software, connectivity and
+                  system issues, escalate where needed, and assist with day-to-day IT operations while building enterprise
+                  IT support, system administration and IT service management experience.
+                </p>
+                <p>
+                  Previously, I worked as an <strong>Administrator at Mbevha Motors (Pty) Ltd</strong>, where I managed
+                  day-to-day business operations while also designing and building the Mbevha Motors Management System — a
+                  React, Node.js, Express and PostgreSQL platform covering authentication, inventory, vehicle servicing,
+                  quotations and invoicing — which I continue to maintain and expand based on business needs.
                 </p>
                 <p>
                   My core toolkit spans <strong>Java</strong>, <strong>JavaScript</strong>, <strong>Python</strong> and{" "}
@@ -102,10 +107,10 @@ const About = () => {
           <div className="mt-16 text-center animate-fade-in animate-delay-400">
             <Card className="p-8 bg-gradient-card border-0 shadow-soft">
               <blockquote className="text-base md:text-lg text-muted-foreground italic max-w-3xl mx-auto leading-relaxed">
-                "Motivated and detail-oriented Computer Science graduate with practical experience in software
-                development, application support and system troubleshooting. Strong in user requirement analysis,
-                application development, system maintenance and database design, with proven ability to troubleshoot,
-                collaborate in agile teams and deliver functional software solutions."
+                "Motivated and detail-oriented Computer Science graduate with practical experience in IT technical support,
+                software development, application support and system troubleshooting. Strong in first-line user support,
+                hardware and software troubleshooting, system administration, and database design, with proven ability to
+                solve problems, collaborate in agile teams and deliver functional software solutions."
               </blockquote>
             </Card>
           </div>

@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Briefcase, Calendar, CheckCircle, Code2 } from "lucide-react";
+import { Briefcase, Calendar, CheckCircle, Headset } from "lucide-react";
 
 type ExperienceItem = {
   title: string;
@@ -15,13 +15,41 @@ type ExperienceItem = {
 const Experience = () => {
   const experiences: ExperienceItem[] = [
     {
-      title: "Administrator",
-      company: "Mbevha Motors (Pty) Ltd",
-      period: "2026 – Present",
-      type: "Full-Time (Current)",
+      title: "IT Technical Support Intern",
+      company: "Nkgwete IT Solutions",
+      period: "3 August 2026 – Present",
+      type: "Internship (Current) – On-site",
       current: true,
       summary:
-        "I manage the company's day-to-day administrative operations while also driving its digital transformation. Alongside my administrative duties, I designed and built the Mbevha Motors Management System — a full-stack platform that replaced manual processes with an efficient digital workflow, which I continue to maintain and extend.",
+        "Providing first-line IT technical support to users at Eskom Megawatt Park as part of the Nkgwete IT Solutions Graduate Internship Programme. Supporting users with hardware, software, connectivity, system and general IT-related issues, troubleshooting technical problems, escalating issues where required, and assisting with day-to-day IT operations. Gaining practical experience in enterprise IT support, incident troubleshooting, user assistance, system administration processes, documentation and professional IT service delivery within an Eskom environment.",
+      groups: [
+        {
+          label: "First-Line Support & Troubleshooting",
+          items: [
+            "Provide first-line IT technical support to users at Eskom Megawatt Park",
+            "Support users with hardware, software, connectivity, system and general IT-related issues",
+            "Troubleshoot technical problems and escalate issues where required",
+            "Assist with day-to-day IT operations and user assistance",
+          ],
+        },
+        {
+          label: "Enterprise IT & Service Delivery",
+          items: [
+            "Gain practical experience in enterprise IT support and incident troubleshooting",
+            "Support system administration processes and documentation",
+            "Develop professional IT service delivery skills within an Eskom environment",
+            "Build hands-on experience in IT service management and user support workflows",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Administrator",
+      company: "Mbevha Motors (Pty) Ltd",
+      period: "2026",
+      type: "Full-Time",
+      summary:
+        "I managed the company's day-to-day administrative operations while also driving its digital transformation. Alongside my administrative duties, I designed and built the Mbevha Motors Management System — a full-stack platform that replaced manual processes with an efficient digital workflow, which I continue to maintain and extend.",
       groups: [
         {
           label: "Administrative Responsibilities",
@@ -113,7 +141,7 @@ const Experience = () => {
               Professional <span className="gradient-text">Experience</span>
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              Real-world experience across business operations, full-stack development and agile software delivery.
+              Real-world experience across IT support, business operations, full-stack development and agile software delivery.
             </p>
           </div>
 
@@ -129,7 +157,7 @@ const Experience = () => {
                     <div className="flex items-start gap-4">
                       <div className="w-14 h-14 rounded-xl bg-gradient-primary flex items-center justify-center flex-shrink-0">
                         {exp.current ? (
-                          <Code2 size={26} className="text-primary-foreground" aria-hidden="true" />
+                          <Headset size={26} className="text-primary-foreground" aria-hidden="true" />
                         ) : (
                           <Briefcase size={26} className="text-primary-foreground" aria-hidden="true" />
                         )}

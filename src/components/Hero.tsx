@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Github, Linkedin, Mail, Download, FolderGit2, MapPin } from "lucide-react";
 import heroImage from "@/assets/hero-workspace.jpg";
-import profileImage from "@/assets/mashudu-profile.jpg";
+import profileImage from "@/assets/mashudu-profile.jpg.asset.json";
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -35,7 +35,7 @@ const Hero = () => {
               <div className="space-y-4">
                 <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass text-white/90 text-xs md:text-sm font-medium tracking-wide">
                   <span className="w-2 h-2 rounded-full bg-success animate-pulse" aria-hidden="true"></span>
-                  Open to software developer roles
+                  IT Technical Support Intern at Nkgwete IT Solutions
                 </span>
                 <h1 className="text-4xl md:text-6xl font-bold tracking-tight leading-[1.05]">
                   <span className="gradient-text">Mashudu</span>
@@ -53,9 +53,10 @@ const Hero = () => {
 
               {/* Description */}
               <p className="text-base md:text-lg text-primary-foreground/85 leading-relaxed max-w-xl mx-auto md:mx-0 animate-fade-in animate-delay-200">
-                Computer Science graduate building production software end to end. I design, develop and maintain the
-                Mbevha Motors Management System — a React, Node.js and PostgreSQL platform that digitised a real
-                business — after completing my Work Integrated Learning as a Frontend Developer Intern.
+                Computer Science graduate currently providing first-line IT technical support at Eskom Megawatt Park through
+                the Nkgwete IT Solutions Graduate Internship Programme. I bring a full-stack development background — including
+                the Mbevha Motors Management System built with React, Node.js and PostgreSQL — to enterprise support and
+                problem-solving.
               </p>
 
               {/* Tech stack badges */}
@@ -136,8 +137,8 @@ const Hero = () => {
               <div className="relative">
                 <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white/30 shadow-2xl hover-glow">
                   <img
-                    src={profileImage}
-                    alt="Portrait of Mashudu Nemutudi, software developer"
+                    src={profileImage.url}
+                    alt="Portrait of Mashudu Nemutudi, Computer Science graduate and IT Technical Support Intern"
                     width={320}
                     height={320}
                     decoding="async"
