@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Briefcase, Calendar, CheckCircle, Headset, Code2 } from "lucide-react";
+import { Briefcase, Calendar, CheckCircle, Headset } from "lucide-react";
 
 type ExperienceItem = {
   title: string;
