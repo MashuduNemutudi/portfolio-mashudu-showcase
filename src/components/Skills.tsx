@@ -1,44 +1,33 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Code, Database, Layers, Wrench, Brain, Award } from "lucide-react";
+import { Headphones, Monitor, Network, Wrench, Code, Award } from "lucide-react";
 
 const Skills = () => {
   const skillCategories = [
     {
+      icon: Headphones,
+      title: "IT Support & Troubleshooting",
+      skills: ["Technical Support", "IT Support", "User Support", "Troubleshooting", "Problem Solving"],
+    },
+    {
+      icon: Monitor,
+      title: "Hardware & Software",
+      skills: ["Hardware Troubleshooting", "Software Troubleshooting", "Computer Hardware", "Microsoft Office"],
+    },
+    {
+      icon: Network,
+      title: "Networking & Systems",
+      skills: ["Networking", "System Administration", "IT Service Management"],
+    },
+    {
       icon: Code,
-      title: "Programming Languages",
-      skills: ["Java", "JavaScript (ES6+)", "TypeScript", "Python", "SQL / PL-SQL", "HTML5", "CSS3"],
-    },
-    {
-      icon: Layers,
-      title: "Frameworks & Libraries",
-      skills: ["React.js", "React Native", "Expo", "Node.js", "Express.js", "Java EE (Servlets, JSP)", "Prisma", "Tailwind CSS"],
-    },
-    {
-      icon: Database,
-      title: "Databases",
-      skills: ["PostgreSQL", "MySQL", "Oracle SQL", "Database Design", "Schema Modelling", "Query Optimisation"],
+      title: "Programming & Development",
+      skills: ["Java", "JavaScript (ES6+)", "TypeScript", "Python", "SQL", "HTML5", "CSS3"],
     },
     {
       icon: Wrench,
       title: "Tools & Platforms",
-      skills: ["Git & GitHub", "VS Code", "Postman", "GlassFish", "Netlify", "Expo SecureStore", "npm"],
-    },
-    {
-      icon: Brain,
-      title: "Other Technical Skills",
-      skills: [
-        "REST API Development",
-        "Frontend–Backend Integration",
-        "MVC Architecture",
-        "Object-Oriented Programming",
-        "Authentication & Role-Based Access",
-        "System Analysis",
-        "Debugging & Troubleshooting",
-        "Software Testing & QA",
-        "Agile & Scrum",
-        "Low-Code / No-Code (Learning)",
-      ],
+      skills: ["Git & GitHub", "VS Code", "Postman", "Windows OS", "Active Directory", "Ticketing Systems"],
     },
     {
       icon: Award,
@@ -49,7 +38,6 @@ const Skills = () => {
         "Mentoring",
         "Requirements Gathering",
         "Stakeholder Communication",
-        "Problem Solving",
       ],
     },
   ];
@@ -84,7 +72,7 @@ const Skills = () => {
               Technical <span className="gradient-text">Skills</span>
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              A toolkit built through production work, a completed internship and continuous self-directed learning.
+              A toolkit built through first-line IT support, full-stack development and continuous professional learning.
             </p>
           </div>
 
