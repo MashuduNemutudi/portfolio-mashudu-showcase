@@ -23,43 +23,138 @@ import {
   CalendarClock,
   Star,
   ArrowRight,
+  Banknote,
+  Cloud,
+  Plug,
 } from "lucide-react";
-import mbevhaPreview from "@/assets/mbevha-motors-system.jpg";
 
-const featured = {
-  title: "Mbevha Motors Management System",
-  role: "Full-Stack Developer",
-  status: "In active development — used daily to digitise business operations",
-  overview:
-    "A comprehensive full-stack web application I designed and developed while working at Mbevha Motors. It modernises and streamlines the company's operations by replacing manual, paper-based processes with an efficient digital solution covering inventory, vehicle servicing, quotations, invoicing and customer records.",
-  problem:
-    "Mbevha Motors managed vehicle services, stock, quotations and invoices manually across paper files and spreadsheets. Records were easy to lose, quotations were slow to produce, and management had no reliable view of the business.",
-  solution:
-    "A secure, role-based web platform where staff capture jobs and customers once and reuse that data across services, quotations and invoices — with an administrator dashboard that surfaces inventory levels and business reporting in real time.",
-  technologies: ["React", "Node.js", "Express.js", "PostgreSQL", "REST APIs", "Git"],
-  features: [
-    "Secure user authentication",
-    "Administrator dashboard",
-    "Inventory management",
-    "Vehicle service management",
-    "Quotation management",
-    "Invoice generation",
-    "Customer records",
-    "Business reporting",
-    "Responsive user interface",
-    "Role-based access control",
-  ],
-  contributions: [
-    "Requirements gathering with management",
-    "UI/UX design",
-    "Database design",
-    "Backend API development",
-    "Frontend development",
-    "System architecture",
-    "Testing and debugging",
-    "Ongoing maintenance and feature development",
-  ],
+type FeaturedProject = {
+  id: string;
+  title: string;
+  tagline: string;
+  role: string;
+  status: string;
+  icon: typeof Car;
+  flagship?: boolean;
+  liveUrl?: string;
+  githubUrl?: string;
+  overview: string;
+  problem: string;
+  solution: string;
+  result?: string;
+  integration?: { title: string; body: string };
+  architecture?: string[];
+  deployment?: string[];
+  technologies: string[];
+  features: string[];
+  contributions: string[];
 };
+
+const featuredProjects: FeaturedProject[] = [
+  {
+    id: "vhalaudzi",
+    title: "Vhalaudzi Cash Loan",
+    tagline: "Full-Stack Loan Management & Digital Lending Platform",
+    role: "Full-Stack Developer",
+    status: "Live in production on the business's own domain",
+    icon: Banknote,
+    flagship: true,
+    liveUrl: "https://vhalaudzicashloans.co.za",
+    githubUrl: "https://github.com/MashuduNemutudi/vlms",
+    overview:
+      "A full-stack digital lending platform developed for Vhalaudzi Cash Loan, featuring customer loan applications, administrative management, loan tracking and NuPay API integration. Customers interact with the lending business online while administrators manage applications, customers, loan information and repayments through the system.",
+    problem:
+      "The business needed a digital system to manage its lending operations and reduce reliance on manual, paper-based processes.",
+    solution:
+      "I developed a full-stack web-based loan management platform with customer-facing functionality, an administrative system, database integration and NuPay API integration.",
+    result: "A deployed production system accessible through the business's own domain.",
+    integration: {
+      title: "NuPay API integration",
+      body: "The system integrates with NuPay's API to connect the loan management workflow with payment and debit-order processing, so repayment-related operations are handled through the business's existing payment provider rather than manually.",
+    },
+    architecture: ["React frontend", "Node.js / Express REST API", "PostgreSQL database", "NuPay API"],
+    deployment: ["Frontend → Vercel", "Backend → Render", "Database → PostgreSQL", "Storage → Cloudflare R2"],
+    technologies: [
+      "React",
+      "JavaScript",
+      "Node.js",
+      "Express.js",
+      "PostgreSQL",
+      "REST APIs",
+      "NuPay API",
+      "Vercel",
+      "Render",
+      "Cloudflare R2",
+      "Git/GitHub",
+    ],
+    features: [
+      "Customer registration and authentication",
+      "Customer login",
+      "Loan application workflow",
+      "Loan application management",
+      "Loan status tracking",
+      "Loan repayment information",
+      "Administrative dashboard",
+      "Admin authentication",
+      "Loan and customer management",
+      "Payment / debit-order integration",
+      "API-based frontend–backend communication",
+      "Responsive user interface",
+      "Secure backend and API architecture",
+      "Database-driven application",
+      "Deployed to production",
+    ],
+    contributions: [
+      "System and database design",
+      "Frontend development in React",
+      "Backend and REST API development",
+      "NuPay API integration",
+      "Authentication and access control",
+      "Testing and debugging",
+      "Production deployment",
+      "Ongoing maintenance",
+    ],
+  },
+  {
+    id: "mbevha",
+    title: "Mbevha Motors – Workshop Management System",
+    tagline: "Full-Stack Workshop & Business Administration Platform",
+    role: "Full-Stack Developer",
+    status: "In active use — maintained and expanded as the business grows",
+    icon: Car,
+    overview:
+      "A comprehensive full-stack web application I designed and developed while working at Mbevha Motors. It modernises and streamlines the company's operations by replacing manual, paper-based processes with an efficient digital solution covering inventory, vehicle servicing, quotations, invoicing and customer records.",
+    problem:
+      "Mbevha Motors managed vehicle services, stock, quotations and invoices manually across paper files and spreadsheets. Records were easy to lose, quotations were slow to produce, and management had no reliable view of the business.",
+    solution:
+      "A secure, role-based web platform where staff capture jobs and customers once and reuse that data across services, quotations and invoices — with an administrator dashboard that surfaces inventory levels and business reporting in real time.",
+    result: "A deployed system that improved the company's administrative and workshop-management processes.",
+    architecture: ["React frontend", "Node.js / Express REST API", "PostgreSQL database"],
+    technologies: ["React", "Node.js", "Express.js", "PostgreSQL", "REST APIs", "Git"],
+    features: [
+      "Secure user authentication",
+      "Administrator dashboard",
+      "Inventory management",
+      "Vehicle service management",
+      "Quotation management",
+      "Invoice generation",
+      "Customer and vehicle records",
+      "Business reporting",
+      "Responsive user interface",
+      "Role-based access control",
+    ],
+    contributions: [
+      "Requirements gathering with management",
+      "UI/UX design",
+      "Database schema design",
+      "Backend API development",
+      "Frontend development",
+      "System architecture",
+      "Testing and debugging",
+      "Ongoing maintenance and feature development",
+    ],
+  },
+];
 
 const projects = [
   {
@@ -95,7 +190,7 @@ const projects = [
     description:
       "Java EE web application with full CRUD functionality. Designed and implemented database structures and system workflows, troubleshot errors, and deployed and tested on the GlassFish server.",
     icon: Database,
-    technologies: ["Java EE", "MVC", "GlassFish", "UML", "CRUD"],
+    technologies: ["Java EE", "JSP", "Servlets", "MVC", "GlassFish", "CRUD"],
     type: "Enterprise Application",
     highlights: [
       "Full CRUD functionality",
@@ -191,9 +286,179 @@ const hackathons = [
   "FNB App of the Year – Support Team",
 ];
 
-const Projects = () => {
+const FeaturedCard = ({ project }: { project: FeaturedProject }) => {
   const [open, setOpen] = useState(false);
 
+  return (
+    <Card className="p-6 md:p-10 shadow-medium border-primary/20 animate-fade-in">
+      <div className="flex flex-wrap items-start gap-4 mb-5">
+        <div className="w-12 h-12 rounded-xl bg-gradient-primary flex items-center justify-center flex-shrink-0">
+          <project.icon size={24} className="text-primary-foreground" aria-hidden="true" />
+        </div>
+        <div className="min-w-0 flex-1">
+          <div className="flex flex-wrap items-center gap-2 mb-1">
+            <h3 className="text-xl md:text-2xl font-semibold text-foreground">{project.title}</h3>
+            {project.flagship && (
+              <Badge className="bg-primary text-primary-foreground">
+                <Star size={12} className="mr-1.5" aria-hidden="true" />
+                Flagship Project
+              </Badge>
+            )}
+          </div>
+          <p className="text-sm font-medium text-foreground/80">{project.tagline}</p>
+          <p className="text-sm text-muted-foreground">{project.role}</p>
+        </div>
+      </div>
+
+      <p className="text-muted-foreground leading-relaxed mb-4">{project.overview}</p>
+      <p className="text-sm text-primary font-medium mb-5">{project.status}</p>
+
+      <ul className="flex flex-wrap gap-2 mb-6">
+        {project.technologies.map((tech) => (
+          <li key={tech}>
+            <Badge variant="secondary" className="text-xs px-3 py-1">
+              {tech}
+            </Badge>
+          </li>
+        ))}
+      </ul>
+
+      <div className="flex flex-col sm:flex-row flex-wrap gap-3">
+        <Dialog open={open} onOpenChange={setOpen}>
+          <DialogTrigger asChild>
+            <Button size="lg" className="min-h-11 bg-primary-dark hover:bg-primary-dark/90">
+              View Case Study
+              <ArrowRight size={17} className="ml-2" aria-hidden="true" />
+            </Button>
+          </DialogTrigger>
+          <DialogContent className="max-w-3xl max-h-[85vh] overflow-y-auto">
+            <DialogHeader>
+              <DialogTitle className="text-2xl">{project.title}</DialogTitle>
+              <DialogDescription>
+                {project.tagline} · {project.role}
+              </DialogDescription>
+            </DialogHeader>
+
+            <div className="space-y-6 mt-2">
+              <div>
+                <h4 className="font-semibold mb-2">Overview</h4>
+                <p className="text-sm text-muted-foreground leading-relaxed">{project.overview}</p>
+              </div>
+              <div className="grid sm:grid-cols-2 gap-4">
+                <div>
+                  <h4 className="font-semibold mb-2">Problem</h4>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{project.problem}</p>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-2">Solution</h4>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{project.solution}</p>
+                </div>
+              </div>
+              {project.result && (
+                <div>
+                  <h4 className="font-semibold mb-2">Result</h4>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{project.result}</p>
+                </div>
+              )}
+              <div>
+                <h4 className="font-semibold mb-3">Key features</h4>
+                <ul className="grid sm:grid-cols-2 gap-2">
+                  {project.features.map((f) => (
+                    <li key={f} className="flex items-start gap-2 text-sm text-muted-foreground">
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary mt-1.5 flex-shrink-0" aria-hidden="true" />
+                      {f}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-semibold mb-3">My role &amp; contributions</h4>
+                <ul className="grid sm:grid-cols-2 gap-2">
+                  {project.contributions.map((c) => (
+                    <li key={c} className="flex items-start gap-2 text-sm text-muted-foreground">
+                      <span className="w-1.5 h-1.5 rounded-full bg-accent mt-1.5 flex-shrink-0" aria-hidden="true" />
+                      {c}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              {project.integration && (
+                <div className="p-4 rounded-lg bg-muted/50 border border-border">
+                  <h4 className="font-semibold mb-2 flex items-center gap-2">
+                    <Plug size={16} className="text-primary" aria-hidden="true" />
+                    {project.integration.title}
+                  </h4>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{project.integration.body}</p>
+                </div>
+              )}
+              {project.architecture && (
+                <div>
+                  <h4 className="font-semibold mb-3">Architecture</h4>
+                  <ul className="flex flex-wrap items-center gap-2">
+                    {project.architecture.map((layer, i) => (
+                      <li key={layer} className="flex items-center gap-2">
+                        <span className="text-sm px-3 py-1.5 rounded-lg bg-card border border-border text-foreground">
+                          {layer}
+                        </span>
+                        {i < project.architecture!.length - 1 && (
+                          <ArrowRight size={14} className="text-muted-foreground" aria-hidden="true" />
+                        )}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              {project.deployment && (
+                <div>
+                  <h4 className="font-semibold mb-3 flex items-center gap-2">
+                    <Cloud size={16} className="text-primary" aria-hidden="true" />
+                    Deployment
+                  </h4>
+                  <ul className="grid sm:grid-cols-2 gap-2">
+                    {project.deployment.map((d) => (
+                      <li key={d} className="text-sm text-muted-foreground">
+                        {d}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              <div>
+                <h4 className="font-semibold mb-3">Technology stack</h4>
+                <ul className="flex flex-wrap gap-2">
+                  {project.technologies.map((tech) => (
+                    <li key={tech}>
+                      <Badge variant="secondary" className="text-xs px-3 py-1">
+                        {tech}
+                      </Badge>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </DialogContent>
+        </Dialog>
+
+        {project.liveUrl && (
+          <Button size="lg" variant="outline" className="min-h-11" asChild>
+            <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+              <ExternalLink size={17} className="mr-2" aria-hidden="true" />
+              Live Website
+            </a>
+          </Button>
+        )}
+        <Button size="lg" variant="outline" className="min-h-11" asChild>
+          <a href={project.githubUrl ?? "https://github.com/MashuduNemutudi"} target="_blank" rel="noopener noreferrer">
+            <Github size={17} className="mr-2" aria-hidden="true" />
+            GitHub
+          </a>
+        </Button>
+      </div>
+    </Card>
+  );
+};
+
+const Projects = () => {
   return (
     <section id="projects" className="py-24 relative overflow-hidden">
       <div className="absolute inset-0 animated-gradient opacity-10" aria-hidden="true"></div>
@@ -205,134 +470,17 @@ const Projects = () => {
               Featured <span className="gradient-text">Projects</span>
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              Applications and systems I've designed and built — from a production business platform to hackathon
+              Applications and systems I've designed and built — from production business platforms to hackathon
               prototypes and academic full-stack projects.
             </p>
           </div>
 
-          {/* Flagship project */}
-          <Card className="overflow-hidden shadow-medium mb-12 animate-fade-in border-primary/20">
-            <div className="grid lg:grid-cols-2">
-              <div className="relative bg-muted">
-                <img
-                  src={mbevhaPreview}
-                  alt="Screenshot of the Mbevha Motors Management System administrator dashboard"
-                  loading="lazy"
-                  decoding="async"
-                  className="w-full h-full object-cover aspect-[4/3] lg:aspect-auto lg:min-h-[26rem]"
-                />
-                <Badge className="absolute top-4 left-4 bg-primary text-primary-foreground shadow-soft">
-                  <Star size={13} className="mr-1.5" aria-hidden="true" />
-                  Flagship Project
-                </Badge>
-              </div>
-
-              <div className="p-6 md:p-10 flex flex-col justify-center">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 rounded-xl bg-gradient-primary flex items-center justify-center flex-shrink-0">
-                    <Car size={24} className="text-primary-foreground" aria-hidden="true" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl md:text-2xl font-semibold text-foreground">{featured.title}</h3>
-                    <p className="text-sm text-muted-foreground">{featured.role}</p>
-                  </div>
-                </div>
-
-                <p className="text-muted-foreground leading-relaxed mb-4">{featured.overview}</p>
-
-                <p className="text-sm text-primary font-medium mb-5">{featured.status}</p>
-
-                <ul className="flex flex-wrap gap-2 mb-6">
-                  {featured.technologies.map((tech) => (
-                    <li key={tech}>
-                      <Badge variant="secondary" className="text-xs px-3 py-1">
-                        {tech}
-                      </Badge>
-                    </li>
-                  ))}
-                </ul>
-
-                <div className="flex flex-col sm:flex-row gap-3">
-                  <Dialog open={open} onOpenChange={setOpen}>
-                    <DialogTrigger asChild>
-                      <Button size="lg" className="min-h-11 bg-primary-dark hover:bg-primary-dark/90">
-                        View Case Study
-                        <ArrowRight size={17} className="ml-2" aria-hidden="true" />
-                      </Button>
-                    </DialogTrigger>
-                    <DialogContent className="max-w-3xl max-h-[85vh] overflow-y-auto">
-                      <DialogHeader>
-                        <DialogTitle className="text-2xl">{featured.title}</DialogTitle>
-                        <DialogDescription>
-                          {featured.role} · {featured.status}
-                        </DialogDescription>
-                      </DialogHeader>
-
-                      <img
-                        src={mbevhaPreview}
-                        alt="Mbevha Motors Management System dashboard interface"
-                        loading="lazy"
-                        decoding="async"
-                        className="w-full rounded-lg border border-border aspect-[16/10] object-cover"
-                      />
-
-                      <div className="space-y-6 mt-2">
-                        <div>
-                          <h4 className="font-semibold mb-2">The problem</h4>
-                          <p className="text-sm text-muted-foreground leading-relaxed">{featured.problem}</p>
-                        </div>
-                        <div>
-                          <h4 className="font-semibold mb-2">The solution</h4>
-                          <p className="text-sm text-muted-foreground leading-relaxed">{featured.solution}</p>
-                        </div>
-                        <div>
-                          <h4 className="font-semibold mb-3">Key features</h4>
-                          <ul className="grid sm:grid-cols-2 gap-2">
-                            {featured.features.map((f) => (
-                              <li key={f} className="flex items-start gap-2 text-sm text-muted-foreground">
-                                <span className="w-1.5 h-1.5 rounded-full bg-primary mt-1.5 flex-shrink-0" aria-hidden="true" />
-                                {f}
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                        <div>
-                          <h4 className="font-semibold mb-3">My role &amp; contributions</h4>
-                          <ul className="grid sm:grid-cols-2 gap-2">
-                            {featured.contributions.map((c) => (
-                              <li key={c} className="flex items-start gap-2 text-sm text-muted-foreground">
-                                <span className="w-1.5 h-1.5 rounded-full bg-accent mt-1.5 flex-shrink-0" aria-hidden="true" />
-                                {c}
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                        <div>
-                          <h4 className="font-semibold mb-3">Technologies</h4>
-                          <ul className="flex flex-wrap gap-2">
-                            {featured.technologies.map((tech) => (
-                              <li key={tech}>
-                                <Badge variant="secondary" className="text-xs px-3 py-1">
-                                  {tech}
-                                </Badge>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      </div>
-                    </DialogContent>
-                  </Dialog>
-
-                  <Button size="lg" variant="outline" className="min-h-11" asChild>
-                    <a href="https://github.com/MashuduNemutudi" target="_blank" rel="noopener noreferrer">
-                      <Github size={17} className="mr-2" aria-hidden="true" />
-                      GitHub
-                    </a>
-                  </Button>
-                </div>
-              </div>
-            </div>
-          </Card>
+          {/* Featured projects */}
+          <div className="space-y-8 mb-12">
+            {featuredProjects.map((project) => (
+              <FeaturedCard key={project.id} project={project} />
+            ))}
+          </div>
 
           {/* Projects Grid */}
           <ul className="grid md:grid-cols-2 gap-6 mb-16 list-none">
