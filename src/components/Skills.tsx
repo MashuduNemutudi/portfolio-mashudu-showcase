@@ -1,53 +1,147 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Headphones, Monitor, Network, Wrench, Code, Award } from "lucide-react";
+import {
+  Headphones,
+  Monitor,
+  Network,
+  Wrench,
+  Code,
+  Award,
+  Layout,
+  Server,
+  Database,
+  Layers,
+  UserRound,
+} from "lucide-react";
 
 const Skills = () => {
   const skillCategories = [
     {
-      icon: Headphones,
-      title: "IT Support & Troubleshooting",
-      skills: ["Technical Support", "IT Support", "User Support", "Troubleshooting", "Problem Solving"],
-    },
-    {
-      icon: Monitor,
-      title: "Hardware & Software",
-      skills: ["Hardware Troubleshooting", "Software Troubleshooting", "Computer Hardware", "Microsoft Office"],
-    },
-    {
-      icon: Network,
-      title: "Networking & Systems",
-      skills: ["Networking", "System Administration", "IT Service Management"],
-    },
-    {
       icon: Code,
-      title: "Programming & Development",
-      skills: ["Java", "JavaScript (ES6+)", "TypeScript", "Python", "SQL", "HTML5", "CSS3"],
+      title: "Programming Languages",
+      skills: ["JavaScript", "Java", "Python", "SQL", "HTML", "CSS", "TypeScript"],
+    },
+    {
+      icon: Layout,
+      title: "Frontend Development",
+      skills: [
+        "React.js",
+        "React Native",
+        "Responsive Web Design",
+        "Reusable Components",
+        "User Interface Development",
+        "HTML5 & CSS3",
+      ],
+    },
+    {
+      icon: Server,
+      title: "Backend Development",
+      skills: ["Node.js", "Express.js", "Java EE", "JSP", "Servlets", "REST APIs", "MVC Architecture"],
+    },
+    {
+      icon: Database,
+      title: "Databases",
+      skills: [
+        "PostgreSQL",
+        "MySQL",
+        "Oracle SQL",
+        "Database Schema Design",
+        "Data Modelling",
+        "CRUD Operations",
+        "Data Integrity",
+      ],
     },
     {
       icon: Wrench,
-      title: "Tools & Platforms",
-      skills: ["Git & GitHub", "VS Code", "Postman", "Windows OS", "Active Directory", "Ticketing Systems"],
+      title: "Development & Deployment Tools",
+      skills: ["Git & GitHub", "Visual Studio Code", "IntelliJ IDEA", "GlassFish Server", "Postman", "Vercel", "Render"],
+    },
+    {
+      icon: Layers,
+      title: "Software Development Capabilities",
+      skills: [
+        "Full-Stack Application Development",
+        "Business Requirements Analysis",
+        "Software Architecture",
+        "UI & UX Design",
+        "API Design & Integration",
+        "Authentication & Access Control",
+        "Application Testing",
+        "Software Debugging",
+        "Application Deployment",
+        "Production Maintenance",
+        "Functional Specifications",
+        "Technical Documentation",
+        "User Support",
+        "Project Scope Coordination",
+      ],
+    },
+    {
+      icon: Headphones,
+      title: "IT Support & Troubleshooting",
+      skills: ["Technical Support", "IT Support", "User Support", "Troubleshooting", "IT Service Management"],
+    },
+    {
+      icon: Monitor,
+      title: "Hardware, Software & Networking",
+      skills: [
+        "Hardware Troubleshooting",
+        "Software Troubleshooting",
+        "Computer Hardware",
+        "Networking",
+        "System Administration",
+        "Microsoft Office",
+      ],
+    },
+    {
+      icon: UserRound,
+      title: "Professional & Additional Skills",
+      skills: [
+        "Customer Communication",
+        "Attention to Detail",
+        "Analytical Thinking",
+        "Problem-Solving",
+        "Time Management",
+        "Team Collaboration",
+        "Independent Working",
+        "Multitasking",
+        "Deadline Management",
+        "Adaptability",
+      ],
     },
     {
       icon: Award,
-      title: "Professional & Leadership",
+      title: "Leadership & Delivery",
       skills: [
         "Scrum Master (MAISH Hackathon)",
         "Team Leadership",
         "Mentoring",
         "Requirements Gathering",
         "Stakeholder Communication",
+        "Agile Development",
+      ],
+    },
+    {
+      icon: Network,
+      title: "Core Competencies",
+      skills: [
+        "Full-Stack Software Development",
+        "Software Application Design",
+        "Frontend Architecture",
+        "Backend System Development",
+        "System Integration",
+        "Digital Transformation Solutions",
+        "Independent Project Delivery",
       ],
     },
   ];
 
   const certifications = [
-    "Certificate in Cyber Security – University of Johannesburg",
+    "Certificate in Cyber Security – University of Johannesburg (Completed, certificate pending)",
     "Java Fundamentals – Code with Mosh",
     "freeCodeCamp: Responsive Web Design",
     "freeCodeCamp: Back End Development & APIs",
-    "freeCodeCamp: Relational Database",
+    "freeCodeCamp: Relational Databases",
     "freeCodeCamp: JavaScript Algorithms & Data Structures",
     "freeCodeCamp: Frontend Development Libraries",
     "HP LIFE: IT for Business",
@@ -72,7 +166,7 @@ const Skills = () => {
               Technical <span className="gradient-text">Skills</span>
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              A toolkit built through first-line IT support, full-stack development and continuous professional learning.
+              A toolkit built through full-stack development, first-line IT support and continuous professional learning.
             </p>
           </div>
 
@@ -81,7 +175,7 @@ const Skills = () => {
             {skillCategories.map((category, categoryIndex) => (
               <Card
                 key={category.title}
-                className={`p-6 shadow-soft hover-glow transition-transform duration-medium hover:-translate-y-1 animate-fade-in animate-delay-${(categoryIndex + 1) * 100}`}
+                className={`p-6 shadow-soft hover-glow transition-transform duration-medium hover:-translate-y-1 animate-fade-in animate-delay-${((categoryIndex % 4) + 1) * 100}`}
               >
                 <div className="flex items-center gap-3 mb-5">
                   <div className="w-11 h-11 rounded-xl bg-gradient-primary flex items-center justify-center flex-shrink-0">
