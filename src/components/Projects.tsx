@@ -26,6 +26,7 @@ import {
   Banknote,
   Cloud,
   Plug,
+  Building2,
 } from "lucide-react";
 
 type FeaturedProject = {
@@ -122,6 +123,7 @@ const featuredProjects: FeaturedProject[] = [
     role: "Full-Stack Developer",
     status: "In active use — maintained and expanded as the business grows",
     icon: Car,
+    liveUrl: "https://mbevha-motors-management-system.vercel.app",
     overview:
       "A comprehensive full-stack web application I designed and developed while working at Mbevha Motors. It modernises and streamlines the company's operations by replacing manual, paper-based processes with an efficient digital solution covering inventory, vehicle servicing, quotations, invoicing and customer records.",
     problem:
@@ -152,6 +154,72 @@ const featuredProjects: FeaturedProject[] = [
       "System architecture",
       "Testing and debugging",
       "Ongoing maintenance and feature development",
+    ],
+  },
+  {
+    id: "mukhuleko",
+    title: "Mukhuleko Consultants – Business Website",
+    tagline: "Production Company Website with Service Requests & Admin Dashboard",
+    role: "Full-Stack Developer",
+    status: "Live in production on mukhuleko.co.za",
+    icon: Building2,
+    liveUrl: "https://mukhuleko.co.za",
+    overview:
+      "A full production website built for Mukhuleko Consultants, a South African ICT and facilities services company offering IT support, cybersecurity, cloud, networking, electrical installations, cleaning and security services. The site includes a service request system with a database-backed admin dashboard, automated email notifications, and a complete custom domain, email and hosting setup.",
+    problem:
+      "The company had no professional online presence for its range of ICT and facilities services, and no structured way for clients to request a service or for the team to track those requests.",
+    solution:
+      "I designed and built a custom brand-driven marketing site with a 'Request a Service' flow that saves submissions to a live database, a password-protected admin dashboard for tracking and updating request status, and automated email notifications on every new submission.",
+    result:
+      "A fully deployed business website live on its own custom domain, with working business email and an operational request-tracking dashboard.",
+    integration: {
+      title: "Automated email notifications",
+      body: "New service requests trigger automated email notifications sent through Resend using a verified custom domain, so the business is alerted the moment a client submits a request — no manual checking required.",
+    },
+    architecture: [
+      "Next.js 14 App Router",
+      "CSS Modules design system",
+      "Prisma ORM",
+      "Neon serverless PostgreSQL",
+      "Resend email API",
+    ],
+    deployment: [
+      "Hosting → Vercel",
+      "Database → Neon (serverless PostgreSQL)",
+      "Domain & DNS → GoDaddy",
+      "Business email → Zoho Mail",
+      "Notifications → Resend",
+    ],
+    technologies: [
+      "Next.js 14",
+      "App Router",
+      "TypeScript",
+      "CSS Modules",
+      "Neon (PostgreSQL)",
+      "Prisma ORM",
+      "Vercel",
+      "Resend",
+      "Zoho Mail",
+      "GoDaddy DNS",
+    ],
+    features: [
+      "Custom brand-driven design system built from the client's logo",
+      "Service request form saving submissions to a live database",
+      "Password-protected admin dashboard for request tracking",
+      "Request status updates managed from the dashboard",
+      "Automated email notifications on new submissions via Resend",
+      "Verified custom domain used for outbound email",
+      "Fully responsive across mobile, tablet and desktop",
+      "Custom domain, DNS, business email and hosting fully connected",
+    ],
+    contributions: [
+      "End-to-end design and development",
+      "Custom CSS Modules design system (no UI framework)",
+      "Database schema and Prisma data layer",
+      "Service request flow and admin dashboard",
+      "Email notification integration",
+      "Domain, DNS, business email and hosting setup",
+      "Responsive testing and production deployment",
     ],
   },
 ];
