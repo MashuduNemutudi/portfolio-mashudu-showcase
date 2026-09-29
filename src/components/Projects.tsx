@@ -26,6 +26,7 @@ import {
   Banknote,
   Cloud,
   Plug,
+  Building2,
 } from "lucide-react";
 
 type FeaturedProject = {
@@ -122,6 +123,7 @@ const featuredProjects: FeaturedProject[] = [
     role: "Full-Stack Developer",
     status: "In active use — maintained and expanded as the business grows",
     icon: Car,
+    liveUrl: "https://mbevha-motors-management-system.vercel.app",
     overview:
       "A comprehensive full-stack web application I designed and developed while working at Mbevha Motors. It modernises and streamlines the company's operations by replacing manual, paper-based processes with an efficient digital solution covering inventory, vehicle servicing, quotations, invoicing and customer records.",
     problem:
