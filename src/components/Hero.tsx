@@ -47,7 +47,7 @@ const Hero = () => {
                 </p>
                 <p className="flex items-center justify-center md:justify-start gap-2 text-sm md:text-base text-primary-foreground/70">
                   <MapPin size={16} aria-hidden="true" />
-                  Soweto, Gauteng, South Africa
+                  Midrand, Gauteng, South Africa
                 </p>
               </div>
 
