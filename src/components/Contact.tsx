@@ -56,7 +56,7 @@ const Contact = () => {
     {
       icon: MapPin,
       label: "Location",
-      value: "Soweto, Gauteng, South Africa",
+      value: "Midrand, Gauteng, South Africa",
       link: null,
     },
   ];

@@ -60,7 +60,7 @@ const Footer = () => {
                 </li>
                 <li className="flex items-center gap-2">
                   <MapPin size={14} aria-hidden="true" />
-                  Soweto, Gauteng, South Africa
+                  Midrand, Gauteng, South Africa
                 </li>
               </ul>
             </div>
