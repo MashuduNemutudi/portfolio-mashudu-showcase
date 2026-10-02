@@ -26,8 +26,12 @@ const Skills = () => {
       title: "Frontend Development",
       skills: [
         "React.js",
+        "Next.js (App Router)",
         "React Native",
+        "TypeScript",
         "Responsive Web Design",
+        "CSS Modules",
+        "Custom Design Systems",
         "Reusable Components",
         "User Interface Development",
         "HTML5 & CSS3",
