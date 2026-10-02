@@ -7,7 +7,7 @@ const About = () => {
       icon: GraduationCap,
       title: "Education",
       description:
-        "Diploma in Computer Science from Tshwane University of Technology, including a completed Work Integrated Learning placement as a Frontend Developer Intern. Currently pursuing a Certificate in Cyber Security at the University of Johannesburg.",
+        "Diploma in Computer Science from Tshwane University of Technology, including a completed Work Integrated Learning placement as a Frontend Developer Intern. Completed a six-month Certificate in Cyber Security at the University of Johannesburg (January–June 2026), certificate pending.",
     },
     {
       icon: Award,
@@ -25,7 +25,7 @@ const About = () => {
       icon: BookOpen,
       title: "Continuous Learning",
       description:
-        "Java Fundamentals (Code with Mosh), five freeCodeCamp certifications, HP LIFE business and cybersecurity courses, Scrum Master training, and ongoing study in cyber security and modern development frameworks.",
+        "Java Fundamentals (Code with Mosh), five freeCodeCamp certifications, HP LIFE business and cybersecurity courses, Scrum Master training, and a completed six-month Certificate in Cyber Security from the University of Johannesburg.",
     },
   ];
 
