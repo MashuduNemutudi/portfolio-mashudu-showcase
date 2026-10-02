@@ -137,7 +137,7 @@ const Skills = () => {
   ];
 
   const certifications = [
-    "Certificate in Cyber Security – University of Johannesburg (Completed, certificate pending)",
+    "Certificate in Cyber Security – University of Johannesburg (Jan–Jun 2026, completed; certificate pending)",
     "Java Fundamentals – Code with Mosh",
     "freeCodeCamp: Responsive Web Design",
     "freeCodeCamp: Back End Development & APIs",
